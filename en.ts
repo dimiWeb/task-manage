@@ -1,11 +1,13 @@
 import enLocale from 'element-ui/lib/locale/lang/en'
 import errorCode  from "./en-code"
-
+import msgCode from './en-msg-code'
 export default {
   // element-ui
   ...enLocale,
     //errorCode
   ...errorCode,
+  // msgCode
+  ...msgCode,
     //标题
   logoTitel                    :"Intelligent Edge Device",
   //主菜单                       ",
@@ -17,10 +19,10 @@ export default {
   libraryManage                :"Target Database Management",
   oneToOne                     :"1:1 Comparison",  //1.2
   retrieval                    :"Image Retrieval",  // 1.2  
-  //eventManage                  :"事件管理",  //1.2
-  alarmRuleSet                 :"Alarm Pop-ups",  //1.2
-  //signalLinkage                :"信号联动管理",  //1.2
-  //userManage                   :"用户管理", //1.2
+  eventManage                  :"Events Management",  //1.2
+  alarmRuleSet                 :"Alarm Popup",  //1.2
+  signalLinkage                :"Signal Linkage",  //1.2
+  userManage                   :"User Management", //1.2
   sysSettings                  :"System Settings",
   generalSettings              :"General Settings",
   networkSettings              :"Network Settings",
@@ -28,8 +30,8 @@ export default {
   sysInfo                      :"System Information",
   storageManage                :"Storage Management",
   interfaceProtocol            :"Interface Protocol",
-  //logs                         :"系统日志", //1.2
-  //advancedSet                  :"高级设置", //1.2
+  logs                         :"Log Management", //1.2
+  advancedSet                  :"Advanced Settings", //1.2
   languge                      :"Language",
   login                        :"Login",
   logout                       :"Logout",
@@ -41,7 +43,7 @@ export default {
   startExport                  :"Start",
   endExport                    :"End",
   //通用                         ",
-  submitTag                    :"OK",
+  submitTag                    :"Search",
   exportAllTag                 :"Export all",
   filterCondition              :"Filter by",
   exportTag                    :"Export",
@@ -67,7 +69,7 @@ export default {
   faceLead                     :"Image Import",
   confDelete                   :"Delete",
   deleteOk                     :"OK",
-  deleteError                  :"Failed to delete ",
+  deleteError                  :"Failed to delete",
   //file                         ",
   chooseFile                   :"Select Files",
   fileHint                     :"Please confirm that the current export file has been downloaded. After closing, you will need to export again. Continue?",
@@ -118,7 +120,6 @@ export default {
   face_nameTag                 :"Name",
   face_ageTag                  :"Age",
   face_sexTag                  :"Gender",
-  face_ident                   :"Identity No.",
   //人脸库-新增                  ",
   face_rl_addTitle             :"Add target source",
   //人脸库-编辑                  ",
@@ -130,7 +131,7 @@ export default {
   //删除                         ",
   face_noChoose                :"You haven't selected a record",
   face_onlyDelete              :"You can delete up to 50 records",
-  face_batchDelete             :"You are deleting {num} records, continue?",
+  face_batchDelete             :"You are deleting {num} records,continue?",
   face_deleteTitle             :"This operation will permanently delete the personnel details, continue?",
   face_affi_delete             :"Delete personnel details",
   //系统设置                     ",
@@ -142,7 +143,7 @@ export default {
   sys_cg_ntpsetting            :"NTP Settings",
   sys_cg_nptserver             :"NTP Server",
   sys_cg_port                  :"Port",
-  sys_cg_updateInv             :"Update Cycle (mins): ",
+  sys_cg_updateInv             :"Update Cycle (mins) :",
   sys_cg_using                 :"Enable",
   sys_cg_noUsing               :"Disable",
   //网络设置                     ",
@@ -189,6 +190,13 @@ export default {
   sys_equ_clMod_ss             :"Live",
   sys_equ_imgMode1             :"Capture Camera",
   sys_equ_imgMode2             :"IP Camera",
+
+  sys_equ_serverID             :"SIP Server ID",
+  sys_equ_noserverID           :"SIP Server ID cannot be empty",
+  sys_equ_cameraID             :"SIP Camera ID",
+  sys_equ_nocameraID           :"SIP Camera ID cannot be empty",
+  sys_equ_port_spi             :"SIP Server Port",
+  sys_equ_ip_address_spi       :"SIP Server IP",
   ////添加&修改&查看             ",
   sys_equ_title_show           :"Device Details",
   sys_equ_title_edit           :"Edit Device",
@@ -197,7 +205,7 @@ export default {
   sys_equ_deleteErr            :"No free channel for more devices",
   sys_equ_deleteOk             :"The device is deleted",
   sys_equ_libTag               :"Target Database",
-  sys_equ_threshold            :"Threshold (%)",
+  sys_equ_threshold            :"Threshold(%)",
   sys_equ_userName             :"Username",
   sys_equ_password             :"Password",
   sys_equ_codeStream           :"Data Rate",
@@ -214,9 +222,10 @@ export default {
   sys_info_sysReboot           :"System Restart",
   sys_info_reboot              :"Restart",
 
-  //system_resource              : "系统资源",
-  //cpu_usage                    : "CPU 使用率",
-  //memory_usage                 : "内存使用率",
+
+  system_resource              : "System Resources",
+  cpu_usage                    : "CPU Usage",
+  memory_usage                 : "MEM Usage",
   
   //存储管理                     ",
   sys_save_setting             :"Storage Settings",
@@ -267,7 +276,7 @@ export default {
   //confirm                      ",
   changeModeWarn               :"After confirming, the system will clear the current cameras and restart the service. Are you sure to confirm?",
   changeModeTitle              :"Switch access mode",
-  changeModeSucc               :"Access mode changed successfully! Please refresh the page in 20s and log in to the system again",
+  changeModeSucc               :"Access mode changed successfully! Please refresh the page in 20s to log in to the system again.",
   changeCLTip                  :"Do you want to switch to the {type} strategy?",
   changeCLSucc                 :"Capture strategy changed successfully",
   mqttCloseSucc                :"MQTT closed successfully. Please log in again in 25s...",
@@ -316,7 +325,7 @@ export default {
   loadUpdatePackage            :"Import upgrade file",
   clickLoadUpdate              :"Select upgrade file",
   softUpdateTip                :"This operation will upgrade the software, continue?",
-  softUpdateSuccess            :"Software upgrade is successful! Please refresh the page in 20s and log in to the system again",
+  softUpdateSuccess            :"Software upgrade is successful! Please refresh the page in 20s to log back into the system",
   noChooseUpdateFile           :"You haven't selected an upgrade file yet",
   rebootTip                    :"This operation will restart the device, continue?",
   rebootTitle                  :"Restart",
@@ -340,7 +349,7 @@ export default {
   noChooseChannel              :"The channel has not been selected",
   channelNameNull              :"The channel name cannot be empty",
   protocolNull                 :"The protocol has not been selected",
-                               
+                                 
   RTSPAddressNull              :"The RTSP address cannot be empty",
   IPAddressNull                :"The IP address cannot be empty",
   IPAddressErr                 :"Incorrect IP address format",
@@ -379,10 +388,10 @@ export default {
                                
   //Flash相关                  
   enableFlashTitle             :"Install or enable the Flash Player",
-  enableFlashTips              :"The current feature requires Flash Player support, please install or enable it first",
+  enableFlashTips              :"The current feature requires Flash Player support, please install or enable it",
                                
   confirmChangeMQTTStatusTitle :"Toggle Access Protocol",
-  confirmChangeMQTTStatusTips  :"Please be careful! Toggling the access protocol will delete all data, continue?",
+  confirmChangeMQTTStatusTips  :"Please be careful! Toggling the access protocol will delete all data,  continue?",
 
   https_key_no_choose          : "SSL key file not yet selected",
   https_crt_no_choose          : "SSL certificate file not yet selected",
@@ -391,61 +400,109 @@ export default {
   changeModeCl                 : "Modify capture strategy",
   Accurate                     : "Accurate",
   Timing                       : "Timing",
-  RealTime                     : "Live",
+  RealTime                     : "Realtime",
 
-  drawAreaMsg                  : "The length or width of ROI cannot be less than 60px",
+  drawAreaMsg                  : "The length or width of ROI cannot be less than 60px",  
 
   networkError                 : "Network Error",
-  manage                       : "Manage",
+  manage                       : "Manage", 
   notNull                      : "The {name} cannot be empty",
   valueErr                     : "Incorrect {name} format",
   uploadOk                     : "Uploaded",
   unInstallOk                  : "Uninstalled",
-  
+ 
   //1:N人脸对比
   faceCtra_titComp             : "1:N Comparison",
   faceCtra_grade               : "Rating Reference",
   faceCtra_frist               : "0 ~ 60%: The two images are probably not the same person;",
   faceCtra_second              : "60% ~ 85%: The two images might be the same person;",
   faceCtra_third               : "85% ~ 100%: The two images are most likely the same person!",
-
+  
   // M:N 对比
   retri_tit                    : "Compare",
   retri_getResult              : "TOP-N",
   compare_libary               :"Please select the target database to search",
-
+  
   // 1.2.1
   interface_protocol_conf      :"Interface Protocol Settings",
   alarmRule_blacklist          :"Blacklist",
   alarmRule_whitelist          :"Whitelist",
   alarmRule_stranger           :"Stranger",
 
-  // // 库管理
-  // lib_custom_max_error         :"自定义属性最多五个",
-  // minimum_face_pix_setting     :"最小人脸像素设置",
-  // detection_frame_rate         :"检测帧率",
-  // // 用户管理
-  // user_info                    :"用户",
-  // user_role                    :"角色",
-  // user_onLineOr                :"用户在线状态",
-  // edit_password                :"修改密码",
-  // input_newPwd                 :"新密码",
-  // plInput_newPwd               :"请输入新密码",
-  // plInput_en_newPwd            :"请确认密码",
-  // ensure_newPwd                :"确认密码",
-  // pwd_inconsistency            :"两次密码输入不一致",
-  // reset_password               :"重置密码",
-  // // 系统日志
-  // logs_edit_content            :"操作内容",
-  // logs_edit_person             :"操作人",
-  // logsQuery                    :"查询",
-
-  inputViperUrl                 : "url",
+  // 库管理
+  lib_custom_max_error         :"自定义属性最多五个",
+  minimum_face_pix_setting     :"Min. Face Size",
+  maximum_face_pix_setting     :"Max. Face Size",
+  detection_frame_rate         :"检测帧率",
+  // 用户管理
+  user_role                    :"Role",
+  edit_password                :"Modify Password",
+  input_newPwd                 :"New Password",
+  plInput_newPwd               :"Please enter new password",
+  plInput_en_newPwd            :"Please confirm  new password",
+  ensure_newPwd                :"Confirm password",
+  newPwd_success               :"Success to modify the password",
+  place_ensure_newPwd          :"Please enter the password again ",
+  pwd_inconsistency            :"The new passwords do not match",
+  reset_password               :"Reset Password",
+  pwd_Length                   :"Please enter more than 8 characters",
+  pwd_rules                    :"8 characters allowed, including lettes,numbers and special symbols",
+  // 系统日志
+  logs_edit_content            :"日志内容",
+  logs_edit_person             :"用户",
+  logs_edit_time               :"操作时间",
+  // logs_logout                  :"登出",
+  logs_open                    :"开机",
+  logs_off                     :"关机",
+  logs_web_off                 :"网口状态",
+  logs_edit_user               :"操作日志",
+  logs_fun_edit                :"功能操作",
+  logs_type                    :"日志类型",
+  logsQuery                    :"查询",
+  logopt_result                :"操作结果",
+  logopt_state_suc             :"成功",
+  logsFile                     :"Log Files",
+  FileSize                     :"Size",
+  updateTime                   :"Modification time",
+  inputViperUrl                : "url",
   inputViperUrlErr              : "The url cannot be empty",
   inputViperKey                 : "Enable",
   inputViperSwitch              : "key",
   inputViperKeyErr              : "The key cannot be empty",
-  http_url                      : "http_url",
-  http_key                      : "http_key",
-  
+  http_url                     : "http_url",
+  http_key                     : "http_key",
+// 信号联动管理
+  device_name                  :"Controller Name",
+  device_name_notNull          :"Controller name cannot be empty",
+  device_detail                :"View Details",
+  device_sys_equ_equType       :"Controller Type",
+  assoc_device_ip              :"Controller IP",
+  assoc_device_ip_notNull      :"Controller IP cannot be empty",
+  assoc_device_ip_IPErr        :"Controller IP format is not correct",
+  assoc_sys_equ_port           :"Controller Port",
+  assoc_sys_equ_port_notNull   :"Controller Port cannot be empty",
+  assoc_sys_equ_port_inputPort :"The controller port numbers range from 0 to 65535",
+  assoc_new_device             :"Add Controller",
+  relay_new                    :"Relay",
+  select_device                :"Select Controller",
+  delete_assoc                 :"After the operation, this controller will be deleted,continue?",
+  delete_assocTitle            :"Delete Controller",
+  assoc_channelName            :"Channel Name",  
+
+  select_all                   : "All",
+
+  manufacturer                 : "Manufacturer",
+  dahua                        : "Dahua",
+  hikvision                    : "HIKVISION",
+  sensedlc11                   : "SenseDLC",
+    // 高级设置
+  adv_warn                     :"Input error, must be integer ({min}-{max})",
+  adv_betwwennum               :"Max. Size cannot smaller than Min. Size",
+  // 信号联动管理
+  // equipment_associated         :"设备关联",
+  equipment_nonull             :"不能为空",
+  equipment_userdefined        :"自定义属性",
+  default_value                :"默认值",
+  // equipment_dev_ip             :"设备IP",
+  admin                        : "Administrator",
 };

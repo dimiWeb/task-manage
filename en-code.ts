@@ -1,6 +1,6 @@
 export default {
 	errorCode:{	
-		"-1"		:"Unknown error",
+		"-1"	:"Unknown error",
 		"-105"  : "Data does not exist",
 		"-109"  : "Camera does not exist",
 		"-110"  : "No face image in the database",
@@ -15,6 +15,8 @@ export default {
 		"-123"  : "The database has been bound to the camera, please unbind it before deleting",
 		"-126"	: "No such face image in the target database",
 		"-139"	: "Camera is not online",
+		"-141"  : "Soory,you donnot have this permission",
+		"-142"  : "Weak Level Passord",
 		"-610"  : "Snap mode switch failed",
 		"-1101" : "No face or multiple faces detected",
 		"-1102" : "The face image quality is too low",
