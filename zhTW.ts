@@ -132,7 +132,6 @@ export default {
   face_no                      :"无",// 1.2+
 
  face_rl_addTitle             :"新增目標來源",
-  face_rl_addTitle             :"新增目标源",
  face_rl_eidtTitle            :"編輯人員資訊",
  //人脸库-详情                  ",
  face_rl_infoTitle            :"人員詳細資料",
@@ -361,9 +360,6 @@ export default {
  channelNameNull              :"通道名稱不可空白",
  protocolNull                 :"尚未選取通訊協定",
   URLAddressNull               :"URL位址不可空白",//1.2*
-  IPAddressNull                :"IP地址不能为空",
-  IPAddressErr                 :"IP地址格式不正确",
-  portNotNull                  :"端口不能为空",
                                
  RTSPAddressNull              :"RTSP位址不可空白",
  IPAddressNull                :"IP位址不可空白",
@@ -374,9 +370,6 @@ export default {
  inputPort                    :"連接埠號碼的範圍介於0至65535",
                                
  chooseLibrary                :"選取目標資源庫",
-  thresholdNotNull             :"阈值不能为空",
-  libFaceIsNull                :"未设置目标库",
-                               
  threshold                    :"閾值",
  thresholdNotNull             :"閾值不可空白",
  libFaceIsNull                :"未設定目標資源庫",
