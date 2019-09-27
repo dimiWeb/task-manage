@@ -9,7 +9,7 @@ export default {
   // msgCode
   ...msgCode,
   //标题
-  logoTitel                    :"智能边缘节点",
+  logoTitel                    :"Intelligent Edge Device",
   //主菜单                     
   realTimeVideo                :"Live Preview",
   recordQuery                  :"Record Query",  
@@ -98,7 +98,7 @@ export default {
   warnTitle                    :"Alarm Details",
   capturingFace                :"Capture Face Image",
   compareFace                  :"Portrait Database Image",
-  faceIdent                    :"证件",
+  faceIdent                    :"Identity",
   uoloadForCompare             :"Upload face image to compare",
   uploadForSearch              :"Upload face image to search",
   reUploadSearch               :"Click image to re-upload",
@@ -134,7 +134,6 @@ export default {
   face_rl_infoTitle            :"Person Details",
   face_rl_delete               :"Delete",
   face_rl_edit                 :"Edit Attribute",
-  face_rl_edit                 :"修改属性",
   //删除                       
   face_noChoose                :"You haven't selected a record",
   face_onlyDelete              :"You can delete up to 50 records",
@@ -245,7 +244,6 @@ export default {
 
 
 
-  sys_api_mqttName             :"mqtt用户名",
   sys_api_equId                :"Device ID",
   sys_api_produce              :"Access Protocol",
   sys_api_mqttPort             :"mqtt Port",
@@ -360,11 +358,7 @@ export default {
   channelNameNull              :"The channel name cannot be empty",
   protocolNull                 :"The protocol has not been selected",
   URLAddressNull               :"URL地址不能为空",
-  IPAddressNull                :"IP地址不能为空",
-  IPAddressErr                 :"IP地址格式不正确",
-  portNotNull                  :"端口不能为空",
                                
-  inputInteger                 :"请输入整数数字值",
   IPAddressNull                :"The IP address cannot be empty",
   IPAddressErr                 :"Incorrect IP address format",
   portNotNull                  :"The port cannot be empty",
@@ -373,14 +367,12 @@ export default {
   inputPort                    :"The port numbers range from 0 to 65535",
                                
   chooseLibrary                :"Select Database",
-  thresholdNotNull             :"阈值不能为空",
-  libFaceIsNull                :"未设置目标库",
                                
   threshold                    :"Threshold",
   thresholdNotNull             :"The threshold cannot be empty",
   libFaceIsNull                :"No database",
                                
-  updateBtn                    :"修改",
+  updateBtn                    :"Modify",
                                
   y_m_d                        :"Year-month-day",
   m_d_y                        :"Month-day-year",
@@ -450,7 +442,7 @@ export default {
   // lib_custom_max_error         :"自定义属性最多五个",
   minimum_face_pix_setting     :"Min. Face Size",
   maximum_face_pix_setting     :"Max. Face Size",
-  detection_frame_rate         :"检测帧率",
+  detection_frame_rate         :"Frame Rate Detection",
   // 用户管理
   user_role                    :"Role",
   edit_password                :"Modify Password",
@@ -466,14 +458,14 @@ export default {
   pwd_rules                    :"8 characters allowed,including lettes,numbers and special symbols",
   user_rule                    :"English letters, numbers, and special characters (at sign (@), dot (.), underscore (_), and hyphen (-)) are allowed, less than 50 characters in length",//1.2+
   // 系统日志
-  logs_edit_content            :"日志内容",
-  logs_edit_person             :"用户",
-  logs_edit_time               :"操作时间",
+  logs_edit_content            :"Log Conten",
+  logs_edit_person             :"User",
+  logs_edit_time               :"Operation Time",
   // logs_logout                  :"登出",
-  logs_open                    :"开机",
-  logs_off                     :"关机",
-  logs_web_off                 :"网口状态",
-  logs_edit_user               :"操作日志",
+  logs_open                    :"Power-on",
+  logs_off                     :"Power-off",
+  logs_web_off                 :"Network Port Status",
+  logs_edit_user               :"Operation Log",
   logs_fun_edit                :"功能操作",
   logs_type                    :"日志类型",
   logopt_result                :"操作结果",
@@ -524,11 +516,7 @@ export default {
   // equipment_dev_ip             :"设备IP",
   admin                        : "Administrator",
   all_user_name                : "全部用户",
-
-  admin                        : "管理员",
-
   add_user                     : "新增用户",
-
   add_role                     : "新增角色",
   role_info                    : "角色详情",
   set_role                     : "编辑角色",
