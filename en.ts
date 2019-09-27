@@ -1,7 +1,6 @@
 ﻿import enLocale from 'element-ui/lib/locale/lang/en'
 import errorCode  from "./en-code"
-import msgCode  from "./en-msg-code"
-import sysCode from "./en-msg-code"
+import msgCode from './en-msg-code'
 export default {  
   // element-ui
   ...enLocale,
@@ -10,7 +9,7 @@ export default {
   // msgCode
   ...msgCode,
   //标题
-  logoTitel                    :"Intelligent Edge Device",
+  logoTitel                    :"智能边缘节点",
   //主菜单                     
   realTimeVideo                :"Live Preview",
   recordQuery                  :"Record Query",  
@@ -131,9 +130,7 @@ export default {
   face_no                      :"No",// 1.2+
 
   face_rl_addTitle             :"Add target source",
-  face_rl_addTitle             :"新增目标源",
   face_rl_eidtTitle            :"Edit person info",
-  face_rl_eidtTitle            :"编辑人员信息",
   face_rl_infoTitle            :"Person Details",
   face_rl_delete               :"Delete",
   face_rl_edit                 :"Edit Attribute",
@@ -232,15 +229,12 @@ export default {
   sys_info_sysReboot           :"System Restart",
   sys_info_reboot              :"Restart",
 
-  system_resource              : "系统资源",
-  cpu_usage                    : "CPU使用率",
-  memory_usage                 : "内存使用率",
+
   
   system_resource              : "System Resources",
   cpu_usage                    : "CPU Usage",
   memory_usage                 : "MEM Usage",
-  sys_save_residue             :"剩余(MB)",
-  sys_save_plan                :"存储计划",
+
   sys_save_setting             :"Storage Settings",
   sys_save_all                 :"Total (MB)",
   sys_save_residue             :"Free (MB)",
@@ -248,9 +242,9 @@ export default {
   sys_save_strategy            :"Storage Strategy",
   sys_save_fullCover           :"Refill",
   sys_save_fullStop            :"Freeze",
-  sys_api_equId                :"设备ID",
-  sys_api_produce              :"接入协议",
-  sys_api_mqttPort             :"mqtt端口",
+
+
+
   sys_api_mqttName             :"mqtt用户名",
   sys_api_equId                :"Device ID",
   sys_api_produce              :"Access Protocol",
@@ -470,7 +464,7 @@ export default {
   reset_password               :"Reset Password",
   pwd_Length                   :"Please enter more than 8 characters",
   pwd_rules                    :"8 characters allowed,including lettes,numbers and special symbols",
-  user_rule                    :"Should be letters,Numbers,characters (@ and. -),length <50",//1.2+
+  user_rule                    :"English letters, numbers, and special characters (at sign (@), dot (.), underscore (_), and hyphen (-)) are allowed, less than 50 characters in length",//1.2+
   // 系统日志
   logs_edit_content            :"日志内容",
   logs_edit_person             :"用户",
@@ -482,7 +476,6 @@ export default {
   logs_edit_user               :"操作日志",
   logs_fun_edit                :"功能操作",
   logs_type                    :"日志类型",
-  logsQuery                    :"查询",
   logopt_result                :"操作结果",
   logopt_state_suc             :"成功",
   logsFile                     :"Log Files",
@@ -531,6 +524,8 @@ export default {
   // equipment_dev_ip             :"设备IP",
   admin                        : "Administrator",
   all_user_name                : "全部用户",
+
+  admin                        : "管理员",
 
   add_user                     : "新增用户",
 
