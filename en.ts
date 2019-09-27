@@ -1,6 +1,7 @@
 ﻿import enLocale from 'element-ui/lib/locale/lang/en'
 import errorCode  from "./en-code"
-import msgCode from './en-msg-code'
+import msgCode from "./en-msg-code"
+import sysCode from "./en-msg-code"
 export default {  
   // element-ui
   ...enLocale,
@@ -8,8 +9,9 @@ export default {
   ...errorCode,
   // msgCode
   ...msgCode,
+  ...sysCode,
   //标题
-  logoTitel                    :"Intelligent Edge Device",
+  logoTitel                    :"智能边缘节点",
   //主菜单                     
   realTimeVideo                :"Live Preview",
   recordQuery                  :"Record Query",  
@@ -228,14 +230,18 @@ export default {
   sys_info_sysReboot           :"System Restart",
   sys_info_reboot              :"Restart",
 
-
+  system_resource              : "System Resources", // 1.2*
+  cpu_usage                    : "CPU Usage", // 1.2*
+  memory_usage                 : "Memory Usage", // 1.2*
   
+  //存储管理                   
   system_resource              : "System Resources",
   cpu_usage                    : "CPU Usage",
   memory_usage                 : "MEM Usage",
-
+  sys_save_plan                :"存储计划",
   sys_save_setting             :"Storage Settings",
   sys_save_all                 :"Total (MB)",
+  sys_save_fullCover           :"满覆盖",
   sys_save_residue             :"Free (MB)",
   sys_save_plan                :"Storage Plan",
   sys_save_strategy            :"Storage Strategy",
@@ -250,6 +256,17 @@ export default {
   sys_api_mqttName             :"mqtt Username",
   sys_api_mqttPwd              :"mqtt Password",
   sys_api_title                :"HTTP Configuration",
+  sys_save_fullStop            :"满即停",
+  sys_save_emptyRecord         :"清空记录",//1.2+
+  sys_save_warn                :"此操作将清空抓拍和告警记录，是否继续?",//1.2+
+  sys_save_delSucc             :"抓拍和告警记录已清空", //1.2+
+  //接口协议                   
+  sys_api_equId                :"设备ID",
+  sys_api_produce              :"接入协议",
+  sys_api_mqttPort             :"mqtt端口",
+  sys_api_mqttName             :"mqtt用户名",
+  sys_api_mqttPwd              :"mqtt密码",
+  sys_api_title                :"HTTP配置",
   //输入提示                   
   inputError                   :"There are still empty fields",
   //placehor                   
@@ -358,27 +375,38 @@ export default {
   channelNameNull              :"The channel name cannot be empty",
   protocolNull                 :"The protocol has not been selected",
   URLAddressNull               :"URL地址不能为空",
+  noChooseChannel              :"通道尚未选择",
+  channelNameNull              :"通道名称不能为空",
+  protocolNull                 :"协议尚未选择",                          
+  URLAddressNull               :"The URL cannot be empty.",//1.2*
+  IPAddressNull                :"IP地址不能为空",
+  IPAddressErr                 :"IP地址格式不正确",
+  portNotNull                  :"端口不能为空",
                                
   IPAddressNull                :"The IP address cannot be empty",
   IPAddressErr                 :"Incorrect IP address format",
   portNotNull                  :"The port cannot be empty",
+  inputInteger                 :"请输入整数数字值",
+  inputPort                    :"端口号的范围从0到65535",
                                
-  inputInteger                 :"Please enter an integer value",
-  inputPort                    :"The port numbers range from 0 to 65535",
+  chooseLibrary                :"选择目标库",
                                
-  chooseLibrary                :"Select Database",
+  threshold                    :"阈值",
+  thresholdNotNull             :"阈值不能为空",
+  libFaceIsNull                :"未设置目标库",
                                
   threshold                    :"Threshold",
   thresholdNotNull             :"The threshold cannot be empty",
   libFaceIsNull                :"No database",
+  updateBtn                    :"修改",
                                
-  updateBtn                    :"Modify",
+  y_m_d                        :"年-月-日",
+  m_d_y                        :"月-日-年",
+  d_m_y                        :"日-月-年",
                                
   y_m_d                        :"Year-month-day",
   m_d_y                        :"Month-day-year",
   d_m_y                        :"Day-month-year",
-                               
-  pleChooseChannel             :"Please select a channel",
                                
   //https设置                  
   httpsSettingMenu             :"Security Settings",
@@ -439,40 +467,42 @@ export default {
   alarmRule_stranger           :"Stranger",
 
  // 库管理
-  // lib_custom_max_error         :"自定义属性最多五个",
+  lib_custom_max_error         :"Up to five custom attributes allowed", //1.2 *
   minimum_face_pix_setting     :"Min. Face Size",
   maximum_face_pix_setting     :"Max. Face Size",
   detection_frame_rate         :"Frame Rate Detection",
   // 用户管理
-  user_role                    :"Role",
-  edit_password                :"Modify Password",
-  input_newPwd                 :"New Password",
-  plInput_newPwd               :"Please enter new password",
-  plInput_en_newPwd            :"Please confirm  new password",
-  ensure_newPwd                :"Confirm password",
-  newPwd_success               :"Success to modify the password",
-  place_ensure_newPwd          :"Please enter the password again ",
-  pwd_inconsistency            :"The new passwords do not match",
-  reset_password               :"Reset Password",
-  pwd_Length                   :"Please enter more than 8 characters",
-  pwd_rules                    :"8 characters allowed,including lettes,numbers and special symbols",
+  user_role                    :"Role Name", //1.2 *
+  edit_password                :"Change Password", //1.2 *
+  input_newPwd                 :"New Password",//1.2*
+  plInput_newPwd               :"Please Enter Password", //1.2*
+  plInput_en_newPwd            :"Please Confirm Password", //1.2*
+  ensure_newPwd                :"Confirm Password", // 1.2*
+  newPwd_success               :"Password changed", //1.2*
+  place_ensure_newPwd          :"Please Enter Password Again", //1.2*
+  pwd_inconsistency            :"Passwords inconsistent", //1.2*
+  reset_password               :"Reset Password", //1.2*
+  pwd_Length                   :"The password must be at least eight characters in length.",//1.2*
+  pwd_rules                    :"The password must contain at least eight characters, including letters, numbers, and special characters.",//1.2*
   user_rule                    :"English letters, numbers, and special characters (at sign (@), dot (.), underscore (_), and hyphen (-)) are allowed, less than 50 characters in length",//1.2+
   // 系统日志
-  logs_edit_content            :"Log Conten",
-  logs_edit_person             :"User",
-  logs_edit_time               :"Operation Time",
+  logs_edit_content            :"Log Content",//1.2*
+  logs_edit_person             :"User",// 1.2*
+  logs_edit_time               :"Operation Time",//1.2*
   // logs_logout                  :"登出",
-  logs_open                    :"Power-on",
-  logs_off                     :"Power-off",
-  logs_web_off                 :"Network Port Status",
-  logs_edit_user               :"Operation Log",
-  logs_fun_edit                :"功能操作",
-  logs_type                    :"日志类型",
-  logopt_result                :"操作结果",
-  logopt_state_suc             :"成功",
+  logs_open                    :"Power-on",//1.2*
+  logs_off                     :"Power-off",//1.2*
+  logs_web_off                 :"Network Port Status",//1.2*
+  logs_edit_user               :"Operation Log",//1.2*
+  logs_fun_edit                :"Function Operation",//1.2*
+  logs_type                    :"Log Type",//1.2*
+  logopt_result                :"Result",//1.2*
+  logopt_state_suc             :"Successful",//1.2*
   logsFile                     :"Log Files",
-  FileSize                     :"Size",
-  updateTime                   :"Modification time",
+  logsQuery                    :"Search",//1.2*
+  logsFile                     :"日志文件",
+  FileSize                     :"File Size",//1.2*
+  updateTime                   :"Modification Time",//1.2*
   inputViperUrl                :"url",
   inputViperUrlErr             : "url cannot be empty",
   inputViperKey                :"key",
@@ -482,37 +512,37 @@ export default {
   http_key                     :"http_key",
   
 // 信号联动管理
-  device_name                  :"Controller Name",
-  device_name_notNull          :"Controller name cannot be empty",
-  device_detail                :"View Details",
-  device_sys_equ_equType       :"Controller Type",
-  assoc_device_ip              :"Controller IP",
-  assoc_device_ip_notNull      :"Controller IP cannot be empty",
-  assoc_device_ip_IPErr        :"Controller IP format is not correct",
-  assoc_sys_equ_port           :"Controller Port",
-  assoc_sys_equ_port_notNull   :"Controller Port cannot be empty",
-  assoc_sys_equ_port_inputPort :"The controller port numbers range from 0 to 65535",
-  assoc_new_device             :"Add Controller",
-  relay_new                    :"Relay",
-  select_device                :"Select Controller",
-  delete_assoc                 :"After the operation, this controller will be deleted,continue?",
-  delete_assocTitle            :"Delete Controller",
-  assoc_channelName            :"Channel Name",  
+  device_name                  :"Device Name",//1.2*
+  device_name_notNull          :"The device name cannot be empty.",//1.2*
+  device_detail                :"View Details",//1.2*
+  device_sys_equ_equType       :"Device Type",//1.2*
+  assoc_device_ip              :"Device IP Address",//1.2*
+  assoc_device_ip_notNull      :"The device IP address cannot be empty.",//1.2*
+  assoc_device_ip_IPErr        :"The device IP address is incorrectly formatted.",//1.2*
+  assoc_sys_equ_port           :"Device Port",//1.2*
+  assoc_sys_equ_port_notNull   :"The device port cannot be empty.",//1.2*
+  assoc_sys_equ_port_inputPort :"The port number ranges from 0 to 65535.",//1.2*
+  assoc_new_device             :"Add Correlated Device",//1.2*
+  relay_new                    :"Relay",//1.2*
+  select_device                :"Select a device",//1.2*
+  delete_assoc                 :"This operation will permanently delete the correlated device, continue?",//1.2*
+  delete_assocTitle            :"Delete Correlated Device",//1.2*
+  assoc_channelName            :"Channel Name", //1.2*
 
-  select_all                   : "All",
+  select_all                   : "Select All",//1.2*
 
-  manufacturer                 : "Manufacturer",
+  manufacturer                 : "Vendor",//1.2*
   dahua                        : "Dahua",
   hikvision                    : "HIKVISION",
   sensedlc11                   : "SenseDLC",
   // 高级设置
-  adv_warn                     :"Input error, must be integer ({min}-{max})",
-  adv_betwwennum               :"Max. Size cannot smaller than Min. Size",
+  adv_warn                     :"The input value is incorrect. It must be an integer in the range from {min} to {max}.",//1.2*
+  adv_betwwennum               :"The maximum value cannot be less than the minimum value.",//1.2*
 // 信号联动管理
   // equipment_associated         :"设备关联",
-  equipment_nonull             :"不能为空",
-  equipment_userdefined        :"自定义属性",
-  default_value                :"默认值",
+  equipment_nonull             :"It cannot be empty.",//1.2*
+  equipment_userdefined        :"Custom Attributes",//1.2*
+  default_value                :"Default Value",//1.2*
   // equipment_dev_ip             :"设备IP",
   admin                        : "Administrator",
   all_user_name                : "全部用户",
@@ -522,10 +552,9 @@ export default {
   set_role                     : "编辑角色",
   permission                   : "权限",
 
-  role_notnull                 : "角色名不能为空",
-  
-  role_del_title               : "删除角色",
-  role_del_tip                 : "此操作将会永久删除此角色，是否继续？",
+  admin                        : "Administrator",//1.2*
+
+  add_user                     : "Add User",//1.2*
 
   cur_user_pwd                 : "当前用户密码",
   cur_user_pwd_notnull         : "当前用户密码不能为空",
@@ -541,4 +570,29 @@ export default {
   sys_restore_tips             : "This operation will restore the default settings of all modules except network and security settings, continue?", //1.2+,
   image_code_title             : "Slide to complete image stitching",//1.2+
   image_code_error             : "Please enter the verification code for image stitching",//1.2+
+  add_role                     : "Add Role",//1.2*
+  role_info                    : "Role Details",//1.2*
+  set_role                     : "Edit Role",//1.2*
+  permission                   : "Permission",//1.2*
+
+  role_notnull                 : "The role name cannot be empty.",//1.2*
+  
+  role_del_title               : "Delete Role",//1.2*
+  role_del_tip                 : "This operation will permanently delete the role, continue?",//1.2*
+
+  cur_user_pwd                 : "Password of the Current User",//1.2*
+  cur_user_pwd_notnull         : "The password of the current user cannot be empty.",//1.2*
+  user_notnull                 : "The username cannot be empty.",//1.2*
+  role_choose                  : "Select a role",//1.2*
+  set_user                     : "Edit User",//1.2*
+  confirm_pwd                  : "Password Verification",//1.2*
+  user_del_title               : "Delete User",//1.2*
+  user_del_tip                 : "This operation will permanently delete the user, continue?",//1.2*
+  user_info                    : "User Details", // 1.2 *
+  creater                      : "Created By",//1.2*
+  sys_restore_title            : "恢复默认配置",//1.2+
+  sys_restore_tips             : "除网络及安全设置外，其他模块均恢复出厂设置，是否继续？", //1.2+,
+  image_code_title             : "向右滑动完成拼图",//1.2+
+  image_code_error             : "请先完成拼图验证码",//1.2+
+
 };
