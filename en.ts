@@ -1,6 +1,7 @@
 ﻿import enLocale from 'element-ui/lib/locale/lang/en'
 import errorCode  from "./en-code"
-import msgCode from './en-msg-code'
+import msgCode from "./en-msg-code"
+import sysCode from "./en-msg-code"
 export default {  
   // element-ui
   ...enLocale,
@@ -8,6 +9,7 @@ export default {
   ...errorCode,
   // msgCode
   ...msgCode,
+  ...sysCode,
   //标题
   logoTitel                    :"智能边缘节点",
   //主菜单                     
@@ -19,21 +21,21 @@ export default {
   libraryManage                :"人像库管理", 
   oneToOne                     :"1:1比对",  
   retrieval                    :"以图搜图", 
-  eventManage                  :"事件管理",  
+  eventManage                  :"Event Management",  //1.2*
   alarmRuleSet                 :"告警弹窗", 
-  signalLinkage                :"信号联动管理",  
-  userManage                   :"用户管理", 
+  signalLinkage                :"Signal Linkage Management", //1.2*
+  userManage                   :"User Management", //1.2*
   sysSettings                  :"系统设置",
   generalSettings              :"常规设置",
   networkSettings              :"网络设置",
   deviceManage                 :"设备管理",
   sysInfo                      :"系统信息",
   storageManage                :"存储管理",
-  sysManage                    :"系统管理",
+  sysManage                    :"System Management", //1.2*
   interfaceProtocol            :"接口协议",
-  logs                         :"系统日志", 
+  logs                         :"System Log", //1.2* 
   logs_manage                  :"Log Management", //1.2+
-  advancedSet                  :"高级设置", 
+  advancedSet                  :"Advanced Settings", //1.2*
   languge                      :"语言",
   login                        :"登录",
   logout                       :"注销",
@@ -196,12 +198,12 @@ export default {
   sys_equ_clMod_ss             :"实时模式",
   sys_equ_imgMode1             :"抓拍摄像机",
   sys_equ_imgMode2             :"网络摄像机",
-  sys_equ_serverID             :"SIP服务器ID",
-  sys_equ_noserverID           :"SIP服务器ID不能为空",
-  sys_equ_cameraID             :"SIP相机ID",
-  sys_equ_nocameraID           :"SIP相机ID不能为空",
-  sys_equ_port_spi             :"SIP服务器端口",
-  sys_equ_ip_address_spi       :"SIP服务器IP",
+  sys_equ_serverID             :"SIP Server ID",//1.2*
+  sys_equ_noserverID           :"The SIP server ID cannot be empty.", //1.2*
+  sys_equ_cameraID             :"SIP Camera ID",//1.2*
+  sys_equ_nocameraID           :"The SIP camera ID cannot be empty.",//1.2*
+  sys_equ_port_spi             :"SIP Server Port",//1.2*
+  sys_equ_ip_address_spi       :"SIP Server IP Address",//1.2*
   ////添加&修改&查看           
   sys_equ_title_show           :"设备详情",
   sys_equ_title_edit           :"编辑设备",
@@ -227,9 +229,9 @@ export default {
   sys_info_sysReboot           :"系统重启",
   sys_info_reboot              :"重启",
 
-  system_resource              : "系统资源",
-  cpu_usage                    : "CPU使用率",
-  memory_usage                 : "内存使用率",
+  system_resource              : "System Resources", // 1.2*
+  cpu_usage                    : "CPU Usage", // 1.2*
+  memory_usage                 : "Memory Usage", // 1.2*
   
   //存储管理                   
   sys_save_setting             :"存储设置",
@@ -356,7 +358,7 @@ export default {
   noChooseChannel              :"通道尚未选择",
   channelNameNull              :"通道名称不能为空",
   protocolNull                 :"协议尚未选择",                          
-  URLAddressNull               :"URL地址不能为空",
+  URLAddressNull               :"The URL cannot be empty.",//1.2*
   IPAddressNull                :"IP地址不能为空",
   IPAddressErr                 :"IP地址格式不正确",
   portNotNull                  :"端口不能为空",
@@ -437,41 +439,41 @@ export default {
   alarmRule_stranger           :"陌生人",
 
  // 库管理
-  lib_custom_max_error         :"自定义属性最多五个",
-  minimum_face_pix_setting     :"最小人脸像素",
-  maximum_face_pix_setting     :"最大人脸像素",
-  detection_frame_rate         :"检测帧率",
+  lib_custom_max_error         :"Up to five custom attributes allowed", //1.2 *
+  minimum_face_pix_setting     :"Minimum Face Resolution", //1.2 *
+  maximum_face_pix_setting     :"Maximum Face Resolution", // 1.2*
+  detection_frame_rate         :"Frame Rate Detection", // 1.2 *
   // 用户管理
-  user_role                    :"角色名",
-  edit_password                :"修改密码",
-  input_newPwd                 :"新密码",
-  plInput_newPwd               :"请输入密码",
-  plInput_en_newPwd            :"请确认密码",
-  ensure_newPwd                :"确认密码",
-  newPwd_success               :"密码修改成功",
-  place_ensure_newPwd          :"请输入确认密码",
-  pwd_inconsistency            :"密码输入不一致",
-  reset_password               :"重置密码",
-  pwd_Length                   :"密码长度不小于8位",
-  pwd_rules                    :"密码应为8位字母、数字和特殊符号组合",
-  user_rule                    :"English letters, numbers, and special characters (at sign (@), dot (.), underscore (_), and hyphen (-)) are allowed, less than 50 characters in length",//1.2+
+  user_role                    :"Role Name", //1.2 *
+  edit_password                :"Change Password", //1.2 *
+  input_newPwd                 :"New Password",//1.2*
+  plInput_newPwd               :"Please Enter Password", //1.2*
+  plInput_en_newPwd            :"Please Confirm Password", //1.2*
+  ensure_newPwd                :"Confirm Password", // 1.2*
+  newPwd_success               :"Password changed", //1.2*
+  place_ensure_newPwd          :"Please Enter Password Again", //1.2*
+  pwd_inconsistency            :"Passwords inconsistent", //1.2*
+  reset_password               :"Reset Password", //1.2*
+  pwd_Length                   :"The password must be at least eight characters in length.",//1.2*
+  pwd_rules                    :"The password must contain at least eight characters, including letters, numbers, and special characters.",//1.2*
+  user_rule                    :"English letters, numbers, and special characters (at sign (@), dot (.), underscore (_), and hyphen (-)) are allowed, less than 50 characters in length",//1.2+长度有限制，不超过60个字符例如：Should be letters,Numbers,characters (@ and. -),length <50（不准）
   // 系统日志
-  logs_edit_content            :"日志内容",
-  logs_edit_person             :"用户",
-  logs_edit_time               :"操作时间",
+  logs_edit_content            :"Log Content",//1.2*
+  logs_edit_person             :"User",// 1.2*
+  logs_edit_time               :"Operation Time",//1.2*
   // logs_logout                  :"登出",
-  logs_open                    :"开机",
-  logs_off                     :"关机",
-  logs_web_off                 :"网口状态",
-  logs_edit_user               :"操作日志",
-  logs_fun_edit                :"功能操作",
-  logs_type                    :"日志类型",
-  logopt_result                :"操作结果",
-  logopt_state_suc             :"成功",
-  logsQuery                    :"查询",
+  logs_open                    :"Power-on",//1.2*
+  logs_off                     :"Power-off",//1.2*
+  logs_web_off                 :"Network Port Status",//1.2*
+  logs_edit_user               :"Operation Log",//1.2*
+  logs_fun_edit                :"Function Operation",//1.2*
+  logs_type                    :"Log Type",//1.2*
+  logopt_result                :"Result",//1.2*
+  logopt_state_suc             :"Successful",//1.2*
+  logsQuery                    :"Search",//1.2*
   logsFile                     :"日志文件",
-  FileSize                     :"文件大小",
-  updateTime                   :"修改时间",
+  FileSize                     :"File Size",//1.2*
+  updateTime                   :"Modification Time",//1.2*
   inputViperUrl                :"url",
   inputViperUrlErr             :"url不能为空",
   inputViperKey                :"key",
@@ -481,65 +483,66 @@ export default {
   http_key                     :"http_key",
   
 // 信号联动管理
-  device_name                  :"关联设备名称",
-  device_name_notNull          :"关联设备名称不能为空",
-  device_detail                :"查看详情",
-  device_sys_equ_equType       :"关联设备类型",
-  assoc_device_ip              :"关联设备IP",
-  assoc_device_ip_notNull      :"关联设备IP不能为空",
-  assoc_device_ip_IPErr        :"关联设备IP格式不正确",
-  assoc_sys_equ_port           :"关联端口",
-  assoc_sys_equ_port_notNull   :"关联端口不能为空",
-  assoc_sys_equ_port_inputPort :"关联端口范围从0到65535",
-  assoc_new_device             :"添加关联设备",
-  relay_new                    :"继电器",
-  select_device                :"选择设备",
-  delete_assoc                 :"此操作将会永久删除关联设备，是否继续？",
-  delete_assocTitle            :"删除关联设备",
-  assoc_channelName            :"通道名称",   
+  device_name                  :"Device Name",//1.2*
+  device_name_notNull          :"The device name cannot be empty.",//1.2*
+  device_detail                :"View Details",//1.2*
+  device_sys_equ_equType       :"Device Type",//1.2*
+  assoc_device_ip              :"Device IP Address",//1.2*
+  assoc_device_ip_notNull      :"The device IP address cannot be empty.",//1.2*
+  assoc_device_ip_IPErr        :"The device IP address is incorrectly formatted.",//1.2*
+  assoc_sys_equ_port           :"Device Port",//1.2*
+  assoc_sys_equ_port_notNull   :"The device port cannot be empty.",//1.2*
+  assoc_sys_equ_port_inputPort :"The port number ranges from 0 to 65535.",//1.2*
+  assoc_new_device             :"Add Correlated Device",//1.2*
+  relay_new                    :"Relay",//1.2*
+  select_device                :"Select a device",//1.2*
+  delete_assoc                 :"This operation will permanently delete the correlated device, continue?",//1.2*
+  delete_assocTitle            :"Delete Correlated Device",//1.2*
+  assoc_channelName            :"Channel Name", //1.2*
 
-  select_all                   : "全选",
+  select_all                   : "Select All",//1.2*
 
-  manufacturer                 : "厂商",
+  manufacturer                 : "Vendor",//1.2*
   dahua                        : "Dahua",
   hikvision                    : "HIKVISION",
   sensedlc11                   : "SenseDLC",
   // 高级设置
-  adv_warn                     :"输入有误,应为整数且在{min}—{max}之间",
-  adv_betwwennum               :"最大值不能小于最小值",
+  adv_warn                     :"The input value is incorrect. It must be an integer in the range from {min} to {max}.",//1.2*
+  adv_betwwennum               :"The maximum value cannot be less than the minimum value.",//1.2*
 // 信号联动管理
   // equipment_associated         :"设备关联",
-  equipment_nonull             :"不能为空",
-  equipment_userdefined        :"自定义属性",
-  default_value                :"默认值",
+  equipment_nonull             :"It cannot be empty.",//1.2*
+  equipment_userdefined        :"Custom Attributes",//1.2*
+  default_value                :"Default Value",//1.2*
   // equipment_dev_ip             :"设备IP",
 
-  admin                        : "管理员",
+  admin                        : "Administrator",//1.2*
 
-  add_user                     : "新增用户",
+  add_user                     : "Add User",//1.2*
 
-  add_role                     : "新增角色",
-  role_info                    : "角色详情",
-  set_role                     : "编辑角色",
-  permission                   : "权限",
+  add_role                     : "Add Role",//1.2*
+  role_info                    : "Role Details",//1.2*
+  set_role                     : "Edit Role",//1.2*
+  permission                   : "Permission",//1.2*
 
-  role_notnull                 : "角色名不能为空",
+  role_notnull                 : "The role name cannot be empty.",//1.2*
   
-  role_del_title               : "删除角色",
-  role_del_tip                 : "此操作将会永久删除此角色，是否继续？",
+  role_del_title               : "Delete Role",//1.2*
+  role_del_tip                 : "This operation will permanently delete the role, continue?",//1.2*
 
-  cur_user_pwd                 : "当前用户密码",
-  cur_user_pwd_notnull         : "当前用户密码不能为空",
-  user_notnull                 : "用户名不能为空",
-  role_choose                  : "请选择角色",
-  set_user                     : "编辑用户",
-  confirm_pwd                  : "密码验证",
-  user_del_title               : "删除用户",
-  user_del_tip                 : "此操作将会永久删除此用户，是否继续？",
-  user_info                    : "用户详情",
-  creater                      : "创建人",
+  cur_user_pwd                 : "Password of the Current User",//1.2*
+  cur_user_pwd_notnull         : "The password of the current user cannot be empty.",//1.2*
+  user_notnull                 : "The username cannot be empty.",//1.2*
+  role_choose                  : "Select a role",//1.2*
+  set_user                     : "Edit User",//1.2*
+  confirm_pwd                  : "Password Verification",//1.2*
+  user_del_title               : "Delete User",//1.2*
+  user_del_tip                 : "This operation will permanently delete the user, continue?",//1.2*
+  user_info                    : "User Details", // 1.2 *
+  creater                      : "Created By",//1.2*
   sys_restore_title            : "Restore Default",//1.2+
   sys_restore_tips             : "This operation will restore the default settings of all modules except network and security settings, continue?", //1.2+,
   image_code_title             : "Slide to complete image stitching",//1.2+
   image_code_error             : "Please enter the verification code for image stitching",//1.2+
+
 };

@@ -17,8 +17,8 @@
                 "515"               :"Modify camera",
                 "516"               :"Query camera",
                 "517"               :"Video playback",
-                "518"               :"Change access mode",
-                "519"               :"Query access mode",
+                "518"               :"Access Mode Switching (Image Stream/Video Stream)",
+                "519"               :"Access Mode Query (Image Stream/Video Stream)",
                 "520"               :"Query capture mode",
                 "521"               :"Set capture mode",
                 "522"               :"Get default effective area",
@@ -79,15 +79,28 @@
                 "1306"              :"Query current web protocol (HTTP or HTTPS)",
                 "1305"              :"Configure current web protocol (HTTP or HTTPS)",
                 "1307"              :"Get default language",
-                "1312"              :"Query system logs", //1.1.3
+                "1312"              :"Query system logs",//1.1.3
                 "1311"              :"Export system logs", //1.1.3
                 "1317"              :"Restore system",
                 "1331"              :"Export log files",//1.2
                 "1318"              :"Query operation logs",//1.2
-                "1319"              :"Query system logs",
+                "1319"              :"Query system logs",//1.2
                 "1537"              :"Query relay",
                 "1538"              :"Add relay",
                 "1539"              :"Delete relay",
 
-	}	
+    },
+    sysCode:{
+        "1"                 :"Power-on", //1.2*
+        "2"                 :"Power-off",//1.2*
+        "3"                 :"Restart the system",//1.2*
+        "10"                :"LAN1 connected",//1.2*
+        "11"                :"LAN1 not connected",//1.2*
+        "20"                :"LAN2 connected",//1.2*
+        "21"                :"LAN2 not connected",//1.2*
+        "30"                :"LAN3 connected",//1.2*
+        "31"                :"LAN3 not connected",//1.2*
+        "40"                :"LAN4 connected",//1.2*
+        "41"                :"LAN4 not connected"//1.2*
+    }
 }
