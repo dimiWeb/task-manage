@@ -1,8 +1,8 @@
-﻿export default {
-	errorCode:{ 
+export default {
+	errorCode:{	
 		"-1"	:"Unknown error",
 		"-105"  : "Data does not exist",
-		"-108"  :"The specified user does not exist.",//1.2+
+		"-109"  : "Camera does not exist",
 		"-110"  : "No face image in the library",
 		"-113"  : "Username or password error",
 		"-114"  : "User already exists",
@@ -15,15 +15,10 @@
 		"-123"  : "The library has been bound to the camera, please untie it before deleting",
 		"-126"	: "No such face image in the library",
 		"-139"	: "Camera is not online",
-		"-140"  :"The specified user is not authorized.",//1.2+
 		"-141"  : "Soory,you donnot have this permission",
 		"-142"  : "Weak Level Passord",
-		"-143"  :"The specified ID does not exist.",//1.2+
-		"-144"  :"用户数量超出限制",
-		"-145"  :"The entered password is incorrect.", //1.2+
-		"-146"  :"The role is assigned to users and cannot be deleted.", //1.2+
-		"-147"  :"The specified role already exists.",//1.2+
-		"-148"  :"Roles exceed the maximum number.",//1.2+
+		"-145"  : "当前用户密码输入有误", //1.2+
+		"-146"  : "该角色下存在用户不可删除", //1.2+
 		"-610"  : "Snap mode switch failed",
 		"-1101" : "No face or multiple faces detected",
 		"-1102" : "The face image quality is too low",
