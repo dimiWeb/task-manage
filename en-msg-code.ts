@@ -3,11 +3,12 @@
                 "257"               :"Log in",
                 "258"               :"Log out",
                 "260"               :"Request user list",
-                "259"               :"Change password",
+                // "259"               :"Change password",
+                "259"               :"Edit user",
                 "262"               :"Profile",
                 "261"               :"Add user",
                 "264"               :"Delete user",
-                "263"               :"Edit user",
+                // "263"               :"Edit user",
                 "265"               :"Role list",
                 "266"               :"Add role",
                 "267"               :"Delete role",
@@ -79,12 +80,12 @@
                 "1306"              :"Query current web protocol (HTTP or HTTPS)",
                 "1305"              :"Configure current web protocol (HTTP or HTTPS)",
                 "1307"              :"Get default language",
-                "1312"              :"Query system logs",//1.1.3
+                "1312"              :"Query system logs", //1.1.3
                 "1311"              :"Export system logs", //1.1.3
                 "1317"              :"Restore system",
                 "1331"              :"Export log files",//1.2
                 "1318"              :"Query operation logs",//1.2
-                "1319"              :"Query system logs",//1.2
+                "1319"              :"Query system logs",
                 "1537"              :"Query relay",
                 "1538"              :"Add relay",
                 "1539"              :"Delete relay",
@@ -102,5 +103,5 @@
         "31"                :"LAN3 not connected",//1.2*
         "40"                :"LAN4 connected",//1.2*
         "41"                :"LAN4 not connected"//1.2*
-    }
+	}	
 }

@@ -11,69 +11,69 @@ export default {
   ...msgCode,
   ...sysCode,
   //标题
-  logoTitel                    :"智能边缘节点",
-  //主菜单                     
-  realTimeVideo                :"实时预览",
-  recordQuery                  :"记录查询", 
-  snapshotQuery                :"抓拍记录查询",
-  alarmQuery                   :"告警记录查询",
-  faceService                  :"智能业务", 
-  libraryManage                :"人像库管理", 
-  oneToOne                     :"1:1比对",  
-  retrieval                    :"以图搜图", 
+  logoTitel                    :"智慧邊緣節點",
+ //主菜单                       ",
+  realTimeVideo                :"即時預覽",
+  recordQuery                  :"記錄査詢", 
+  snapshotQuery                :"抓拍記錄査詢",
+  alarmQuery                   :"警報記錄查詢",
+  faceService                  :"智慧服務", 
+  libraryManage                :"資料庫管理",//me
+  oneToOne                     :"1:1比對",  
+  retrieval                    :"以圖搜圖",  
   eventManage                  :"事件管理",  //1.2*
-  alarmRuleSet                 :"告警弹窗", 
+  alarmRuleSet                 :"警報快顯視窗",  
   signalLinkage                :"訊號聯動管理", //1.2*
   userManage                   :"使用者管理", //1.2*
-  sysSettings                  :"系统设置",
-  generalSettings              :"常规设置",
-  networkSettings              :"网络设置",
-  deviceManage                 :"设备管理",
-  sysInfo                      :"系统信息",
-  storageManage                :"存储管理",
+  sysSettings                  :"系統設定",
+  generalSettings              :"一般設定",
+  networkSettings              :"網路設定",
+  deviceManage                 :"裝置管理",
+  sysInfo                      :"系統資訊",
+  storageManage                :"儲存管理",
   sysManage                    :"系統管理", //1.2*
-  interfaceProtocol            :"接口协议",
+  interfaceProtocol            :"通訊介面",
   logs                         :"系統記錄檔", //1.2* 
   logs_manage                  :"記錄管理", //1.2+
   advancedSet                  :"進階設定", //1.2*
-  languge                      :"语言",
-  login                        :"登录",
-  logout                       :"注销",
-  //导出                       
-  totalNumTip                  :"每次最多导出 {num} 条数据",
-  curNumTip                    :"当前总数据量为:{num} 条",
-  batchExport                  :"批量导出",
-  exportInterval               :"导出数量区间",
-  startExport                  :"开始",
-  endExport                    :"结束",
+  languge                      :"語言",
+  login                        :"登入",
+  logout                       :"登出",
+ //导出                         ",
+  totalNumTip                  :"每次最多匯出 {num} 筆資料，",
+  curNumTip                    :"目前總資料量為：{num} 筆",
+  batchExport                  :"分批匯出",
+  exportInterval               :"匯出數量範圍",
+  startExport                  :"開始",
+  endExport                    :"結束",
   //通用                       
-  submitTag                    :"确定",
-  exportAllTag                 :"全部导出",
-  filterCondition              :"筛选条件",
-  exportTag                    :"导出",
-  seqNumber                    :"序号",
+  submitTag                    :"確定",
+  exportAllTag                 :"全部匯出",
+  filterCondition              :"篩選條件",
+  exportTag                    :"匯出",
+  seqNumber                    :"序號",
   operation                    :"操作",
-  showDetail                   :"查看详情",
+  showDetail                   :"檢視詳細資料",
   allTip                       :"全部",
-  showDetailOne                :"查看",
-  default                      :"默认",
-  flush                        :"刷新",
+  showDetailOne                :"檢視",
+  default                      :"預設",
+  flush                        :"重新整理",
   cancel                       :"取消",
-  delete                       :"删除",
-  edit                         :"编辑",
-  reset                        :"重置",
-  close                        :"关闭",
-  startDate                    :"开始日期",
-  endDate                      :"结束日期",
-  similarity                   :"相似度",
-  time                         :"时间",
+  delete                       :"刪除",
+  edit                         :"編輯",
+  reset                        :"重設",
+  close                        :"關閉",
+  startDate                    :"開始日期",
+  endDate                      :"結束日期",
+  similarity                   :"相似性",
+  time                         :"時間",
   hint                         :"提示",
-  details                      :"详情",
-  settingSuccess               :"设置成功",
-  faceLead                     :"批量导入", 
-  confDelete                   :"确认删除",
-  deleteOk                     :"删除成功",
-  deleteError                  :"删除失败, ",
+  details                      :"詳細資料",
+  settingSuccess               :"設定成功",
+  faceLead                     :"批量匯入",
+  confDelete                   :"確認刪除",
+  deleteOk                     :"刪除成功",
+  deleteError                  :"刪除失敗， ",
   //file                       
   chooseFile                   :"选择文件",
   fileHint                     :"请确认当前导出文件已被下载,关闭后您需重新导出, 是否继续?",
@@ -92,34 +92,35 @@ export default {
   //抓拍记录                   
   captureTitle                 :"抓拍详情",
   allChannel                   :"所有通道",
-  captureFigure                :"图片",
-  channelNumber                :"通道号",
-  channelName                  :"通道名称",
-  captureDate                  :"抓拍时间",
-  //common                     
-  warnTitle                    :"报警详情",
-  capturingFace                :"抓拍人脸",
-  compareFace                  :"对比人脸",
-  uoloadForCompare             :"上传人脸进行比对",
-  uploadForSearch              :"上传人脸进行搜索",
-  reUploadSearch               :"点击图片重新上传",
-  //告警记录                   
-  libraryNameTip               :"目标库",
-  libraryAttrTip               :"库属性",
-  allLibrary                   :"所有目标库",
-  allLibraryAttr               :"所有库类型",
-  blackLibType                 :"黑名单库",
-  writeLibType                 :"白名单库",
-  //目标库                     
-  libraryNameRe                :"请输入库名",
-  libraryName                  :"库名",
-  pictureTotal                 :"图片数量",
-  createTime                 :"创建时间",
-  libraryTypeTag               :"类型",
-  addLibrary                   :"新增目标库",
-  editLibrary                  :"编辑目标库",
-  //人脸库                     
-  face_picTag                  :"图片",
+  captureFigure                :"圖片",
+  channelNumber                :"通道編號",
+  channelName                  :"通道名稱",
+  captureDate                  :"抓拍時間",
+  //common                       ",
+  warnTitle                    :"警示詳細資料",
+  capturingFace                :"抓拍人臉",
+  compareFace                  :"比對人臉",
+  //  faceIdent                    :"證件",
+  uoloadForCompare             :"上傳人臉進行比對",
+  uploadForSearch              :"上載人臉進行搜尋",
+  reUploadSearch               :"點選圖片重新上傳",
+  //告警记录                     ",
+  libraryNameTip               :"目標資料庫",
+  libraryAttrTip               :"資料庫屬性",
+  allLibrary                   :"所有目標資料庫",
+  allLibraryAttr               :"所有資料庫類型",
+  blackLibType                 :"黑名單資料庫",
+  writeLibType                 :"白名單資料庫",
+ //目标库                       ",
+ libraryNameRe                :"庫名",//me
+ libraryName                  :"資料庫名稱",
+ pictureTotal                 :"圖片數量",
+ //  libCrateTime                 :"建立時間",
+ //  libraryTypeTag               :"類型",
+  addLibrary                   :"新增目標資料庫",
+  editLibrary                  :"編輯目標資料庫",
+  //人脸库                       ",
+  face_picTag                  :"圖片",
   face_nameTag                 :"姓名",
   face_ageTag                  :"年龄",
   face_sexTag                  :"性别",
@@ -129,75 +130,73 @@ export default {
   face_mustache                :"鬍子", // 1.2 +
   face_have                    :"有", // 1.2+
   face_no                      :"無",// 1.2+
-
-  //人脸库-新增                
-  face_rl_addTitle             :"新增目标源",
-  //人脸库-编辑                
-  face_rl_eidtTitle            :"编辑人员信息",
-  //人脸库-详情                
-  face_rl_infoTitle            :"人员详情",
-  face_rl_delete               :"删除人员",
-  face_rl_edit                 :"修改属性",
-  //删除                       
-  face_noChoose                :"您尚未选择记录",
-  face_onlyDelete              :"最多只能删除50条记录",
-  face_batchDelete             :"您正在删除{num}条记录,是否继续？",
-  face_deleteTitle             :"此操作将永久删除此人员详情, 是否继续?",
-  face_affi_delete             :"删除人员详情",
-  //系统设置                   
-  //常规设置                   
+ //人脸库-详情                  ",
+  face_rl_addTitle             :"新增目標來源",
+  face_rl_eidtTitle            :"編輯人員資訊",
+  face_rl_infoTitle            :"人員詳細資料",
+  face_rl_delete               :"刪除人員",
+  face_rl_edit                 :"修改屬性",
+ //删除                         ",
+ face_noChoose                :"您尚未選取記錄",
+ face_onlyDelete              :"最多只能刪除50筆記錄",
+ face_batchDelete             :"您正在刪除{num}筆記錄，是否繼續？",
+ face_deleteTitle             :"此操作將永久刪除此人員的詳細資料，是否繼續？",
+ face_affi_delete             :"刪除人員詳細資料",
+ //常规设置                     ",
   sys_cg_dateFormat            :"日期格式",
-  sys_cg_timeFormat            :"时间格式",
-  sys_cg_timeZone              :"时区",
-  sys_cg_sysTime               :"系统时间",
-  sys_cg_ntpsetting            :"NTP设置",
-  sys_cg_nptserver             :"NTP服务器",
-  sys_cg_updateInv             :"更新周期(分钟) :",
-  sys_cg_using                 :"启用",
-  sys_cg_noUsing               :"不启用",
-  //网络设置                   
-  sys_wl_netInter              :"网口",
-  sys_wl_autoGet               :"自动获取",
-  sys_wl_ipAddr                :"IP地址",
-  sys_wl_subNet                :"子网掩码",
-  sys_wl_gateway               :"网关",
-  sys_wl_macAddr               :"MAC地址",
-  sys_wl_dnsServer             :"DNS服务器",
-  sys_wl_dnsGetFun             :"DNS获取方式",
-  sys_wl_dnsAutoGet            :"自动获取",
-  sys_wl_dnsMyGet              :"手动获取",
-  sys_wl_firstDNS              :"首选DNS",
-  sys_wl_backDNS               :"备选DNS",
-  sys_wl_defutNet              :"默认网卡",
-  sys_wl_useThisNet            :"使用此网络接口设置",
-  /////编辑                    
-  sys_wl_title                 :"编辑网口",
+  sys_cg_timeFormat            :"時間格式",
+  sys_cg_timeZone              :"時區",
+  sys_cg_sysTime               :"系統時間",
+  sys_cg_ntpsetting            :"NTP設定",
+  sys_cg_nptserver             :"NTP伺服器",
+  // sys_cg_port                  :"連接埠",
+  sys_cg_updateInv             :"更新週期 (分鐘)：",
+  sys_cg_using                 :"啟用",
+  sys_cg_noUsing               :"不啟用",
+ //网络设置                     ",
+  sys_wl_netInter              :"網路連接埠",
+  sys_wl_autoGet               :"自動取得",
+  sys_wl_ipAddr                :"IP位址",
+  sys_wl_subNet                :"子網路遮罩",
+  sys_wl_gateway               :"預設閘道",
+  sys_wl_macAddr               :"MAC位址",
+  sys_wl_dnsServer             :"DNS伺服器",
+  sys_wl_dnsGetFun             :"DNS獲取方式",//me
+  sys_wl_dnsAutoGet            :"自動取得",
+  sys_wl_dnsMyGet              :"手動取得",
+  sys_wl_firstDNS              :"慣用DNS",//me
+  sys_wl_backDNS               :"其他DNS",//me
+  sys_wl_defutNet              :"預設網路卡",
+  sys_wl_useThisNet            :"使用此網路介面設定",
+ /////编辑                      ",
+  sys_wl_title                 :"編輯網路連接埠",
   sys_wl_mode                  :"模式",
-  sys_wl_mode_static           :"静态",
+  sys_wl_mode_static           :"靜態",
   sys_wl_mode_dhcp             :"DHCP",
   sys_wl_IpVersion             :"IP版本",
-  sys_wl_addr                  :"地址",
-  //设备管理                   
-  sys_equ_mode                 :"接入模式",
-  sys_equ_video                :"视频模式",
+  sys_wl_addr                  :"位址",
+ //设备管理                     ",
+  sys_equ_mode                 :"存取模式",
+  sys_equ_video                :"視訊模式",
   sys_equ_strategy             :"抓拍策略",
-  sys_equ_image                :"图片模式",
-  sys_equ_deepImage            :"纯抓拍模式",
-  sys_equ_addEqu               :"新增设备",
+  sys_equ_image                :"圖片模式",
+  sys_equ_deepImage            :"純抓拍模式",
+  sys_equ_addEqu               :"新增裝置",
   sys_equ_chan                 :"通道",
-  sys_equ_chanName             :"通道名称",
-  sys_equ_ipOrDomain           :"IP/域名",
-  sys_equ_equType              :"设备类型",
-  sys_equ_protocol             :"协议",
-  sys_equ_port                 :"端口",
-  sys_equ_onlineStat           :"在线状态",
-  sys_equ_isOnline             :"在线",
-  sys_equ_noOnline             :"不在线",
-  sys_equ_clMod_jz             :"精准模式",
-  sys_equ_clMod_ds             :"定时模式",
-  sys_equ_clMod_ss             :"实时模式",
-  sys_equ_imgMode1             :"抓拍摄像机",
-  sys_equ_imgMode2             :"网络摄像机",
+  // sys_equ_chanNum              :"通道編號",
+  sys_equ_chanName             :"通道名稱",
+  sys_equ_ipOrDomain           :"IP/網域名稱",
+  sys_equ_equType              :"裝置類型",
+  sys_equ_protocol             :"通訊協定",
+  sys_equ_port                 :"連接埠",
+  sys_equ_onlineStat           :"上線狀態",
+  sys_equ_isOnline             :"上線",
+  sys_equ_noOnline             :"離線",
+  sys_equ_clMod_jz             :"精準模式",
+  sys_equ_clMod_ds             :"定時模式",
+  sys_equ_clMod_ss             :"即時模式",
+  sys_equ_imgMode1             :"抓拍攝影機",
+  sys_equ_imgMode2             :"網路攝影機",
   sys_equ_serverID             :"SIP伺服器ID",//1.2*
   sys_equ_noserverID           :"SIP伺服器ID不可空白", //1.2*
   sys_equ_cameraID             :"SIP相機ID",//1.2*
@@ -205,239 +204,213 @@ export default {
   sys_equ_port_spi             :"SIP伺服器連接埠ID",//1.2*
   sys_equ_ip_address_spi       :"SIP伺服器IP",//1.2*
   ////添加&修改&查看           
-  sys_equ_title_show           :"设备详情",
-  sys_equ_title_edit           :"编辑设备",
-  sys_equ_title_dele           :"删除设备",
-  sys_equ_delete               :"此操作将会永久删除此设备，是否继续?",
-  sys_equ_deleteErr            :"没有空闲通道，无法进行添加操作",
-  sys_equ_deleteOk             :"删除设备成功",
-  sys_equ_libTag               :"目标库",
-  sys_equ_threshold            :"阈值(%)",
-  sys_equ_userName             :"用户名",
-  sys_equ_password             :"密码",
-  sys_equ_codeStream           :"码流",
+  sys_equ_title_show           :"設備詳情",
+  sys_equ_title_edit           :"編輯設備",
+  sys_equ_title_dele           :"刪除設備",
+  sys_equ_delete               :"此操作將會永久刪除此設備，是否繼續？",
+  sys_equ_deleteErr            :"沒有空閑通道，無法進行添加操作",
+  sys_equ_deleteOk             :"刪除設備成功",
+  sys_equ_libTag               :"目標庫",
+  sys_equ_threshold            :"閾值(%)",
+  sys_equ_userName             :"使用者名",
+  sys_equ_password             :"密碼",
+  sys_equ_codeStream           :"碼流",
   sys_equ_ipAddr               :"IP地址",
-  sys_equ_equAddr              :"相机位置",
+  sys_equ_equAddr              :"相機位置",
   //热区绘制                   
-  hotToDraw_title              :"绘制热区",
-  //系统信息                   
-  sys_info_version             :"版本信息",
-  sys_info_productEq           :"产品序列号",
-  sys_info_sysVer              :"系统版本",
+  hotToDraw_title              :"繪製熱區",
+ //系统信息                     ",
+  sys_info_version             :"版本資訊",
+  sys_info_productEq           :"產品序號",
+  sys_info_sysVer              :"系統版本",
   sys_info_webVer              :"WEB版本",
   sys_info_anthor              :"其他",
-  sys_info_sysReboot           :"系统重启",
-  sys_info_reboot              :"重启",
-
+  sys_info_sysReboot           :"系統重啟",//me
+  sys_info_reboot              :"啟動",//me
   system_resource              : "系統資源", // 1.2*
   cpu_usage                    : "CPU使用率", // 1.2*
   memory_usage                 : "記憶體使用率", // 1.2*
-  
-  //存储管理                   
-  sys_save_setting             :"存储设置",
-  sys_save_all                 :"总容量(MB)",
-  sys_save_residue             :"剩余(MB)",
-  sys_save_plan                :"存储计划",
-  sys_save_strategy            :"存储策略",
-  sys_save_fullCover           :"满覆盖",
-  sys_save_fullStop            :"满即停",
+ //存储管理                     ",
+  sys_save_setting             :"儲存設定",
+  sys_save_all                 :"總容量(MB)",
+  sys_save_residue             :"剩餘(MB)",
+  sys_save_plan                :"儲存計劃",
+  sys_save_strategy            :"儲存策略",
+  sys_save_fullCover           :"錄滿即覆寫",
+  sys_save_fullStop            :"錄滿即停止",
   sys_save_emptyRecord         :"清空記錄",//1.2+
   sys_save_warn                :"此項操作將清空抓拍和警報記錄，是否清空？",//1.2+
-  sys_save_delSucc             :"抓拍和警報記錄已清空", //1.2+
+  sys_save_delSucc             :"抓拍和告警记录已清空", //1.2+
   //接口协议                   
-  sys_api_equId                :"设备ID",
-  sys_api_produce              :"接入协议",
-  sys_api_mqttPort             :"mqtt端口",
-  sys_api_mqttName             :"mqtt用户名",
-  sys_api_mqttPwd              :"mqtt密码",
-  sys_api_title                :"HTTP配置",
-  //输入提示                   
-  inputError                   :"您还有未填写字段",
-  //placehor                   
-  choose                       :"请选择",
-  inputLibName                 :"请输入库名",
-  inputIDOrName                :"请输入姓名",
-  inputTime                    :"请选择系统时间",
-  inputName                    :"请输入姓名",
-  inputAge                     :"请输入年龄",
-  inputIdent                   :"请输入人员证件号",
-  inputAddr                    :"请输入地址",
-  chooseDateTime               :"选择日期时间",
+  sys_api_equId                :"裝置ID",
+  sys_api_produce              :"存取通訊協定",
+  sys_api_mqttPort             :"mqtt連接埠",
+  sys_api_mqttName             :"mqtt使用者名稱",
+  sys_api_mqttPwd              :"mqtt密碼",
+  sys_api_title                :"HTTP組態",
+ //输入提示                     ",
+  inputError                   :"您還有欄位尚未填寫",
+ //placehor                     ",
+  choose                       :"請選取",
+  inputLibName                 :"請輸入資料庫名稱",
+  inputIDOrName                :"請輸入姓名",
+  inputTime                    :"請選取系統時間",
+  inputName                    :"請輸入姓名",
+  inputAge                     :"請輸入年齡",
+  inputIdent                   :"請輸入人員證件編號",
+  inputAddr                    :"請輸入位址",
+  chooseDateTime               :"選取日期時間",
   ///login                     
-  inputUserName                :"请输入用户名",
-  inputUserPwd                 :"请输入密码",
-  //http                       
-  inputDeviceId                :"设备ID不能为空",
-  inputHttpUrl                 :"http_url不能为空",
-  inputHttpKey                 :"http_key不能为空",
-  //err                        
-  libNameErr                   :"库名不能为空",
-  libTypeErr                   :"库类型尚未选择",
-  ageErr                       :"请填写正确的年龄",
-  imageErr                     :"请上传图片",
-  sysTimeErr                   :"系统时间不能为空，或者格式不正确！",
-  mqttPortNullErr              :"mqtt端口不能为空",
-  mqttPortErr                  :"mqtt端口不符合格式（0-65535）",
-  mqttTopicErr                 :"mqtt_topic不能为空",
-  mqttIpErr                    :"mqtt_ip不能为空",
-  mqttNameErr                  :"mqtt用户名不能为空",
-  mqttPwdErr                   :"mqtt密码不能为空",
-  //confirm                    
-  changeModeWarn               :"确认后系统会清除当前相机设备、重启服务，是否确认？",
-  changeModeTitle              :"更改接入模式",
-  changeModeSucc               :"接入模式更改成功！请20s后刷新页面重新登录系统",
-  changeCLTip                  :"是否要切换到{type}策略？",
-  changeCLSucc                 :"抓拍策略更改成功",
-  mqttCloseSucc                :"关闭MQTT成功, 请等待25秒后重新登录...",
-  mqttUpdateSucc               :"修改MQTT配置信息成功, 请等待25秒后重新登录...",
-  httpUpdateSucc               :"修改HTTP配置信息成功, 请等待25秒后重新登录...",
-  //下载页面                   
-  download_src                 :"下载链接",
-  clickDownload                :"点击下载查看详情",
-  saveSuccess                  :"保存成功",
-  updateSuccess                :"修改成功",
-                               
+  inputUserName                :"請輸入使用者名稱",
+  inputUserPwd                 :"請輸入密碼",
+ //http                         ",
+  inputDeviceId                :"裝置ID不可空白",
+  inputHttpUrl                 :"http_url不可空白",
+  inputHttpKey                 :"http_key不可空白",
+ //err                          ",
+  libNameErr                   :"資料庫名稱不可空白",
+  libTypeErr                   :"尚未選取資料庫類型",
+  ageErr                       :"請填寫正確的年齡",
+  imageErr                     :"請上傳圖片",
+  sysTimeErr                   :"系統時間不可空白，或者格式不正確！",
+  mqttPortNullErr              :"mqtt連接埠不可空白",
+  mqttPortErr                  :"mqtt連接埠不符合格式 (0-65535)",
+  mqttTopicErr                 :"mqtt_topic不可空白",
+  mqttIpErr                    :"mqtt_ip不可空白",
+  mqttNameErr                  :"mqtt使用者名稱不可空白",
+  mqttPwdErr                   :"mqtt密碼不可空白",
+ //confirm                      ",
+  changeModeWarn               :"確認後系統會清除目前的相機裝置、重新啟動服務，是否確定？",
+  changeModeTitle              :"變更存取模式",
+  changeModeSucc               :"存取模式變更成功！請在20秒後重新整理介面，以重新登入系統",
+  changeCLTip                  :"是否要切換到{type}策略？",
+  changeCLSucc                 :"抓拍策略變更成功",
+  mqttCloseSucc                :"關閉MQTT成功，請等待25秒後重新登入...",
+  mqttUpdateSucc               :"修改MQTT組態資訊成功，請等待25秒後重新登入...",
+  httpUpdateSucc               :"修改HTTP組態資訊成功，請等待25秒後重新登入...",
+ //下载页面                     ",
+  download_src                 :"下載連結",
+  clickDownload                :"點選下載查看詳細資料",
+  saveSuccess                  :"儲存成功",
+  updateSuccess                :"修改成功",                            
   //补缺                       
-  onLibrary                    :"所在库",
-  deleteLibrayTip              :"此操作将会永久删除此目标库，是否继续？",
-  deleteLibTitle               :"删除目标库",
-  libraryMaxNumErr             :"目标库数量已达上限",
-  addOk                        :"添加成功",
+  onLibrary                    :"所在資料庫",
+  deleteLibrayTip              :"此操作將會永久刪除此目標資料庫，是否繼續？",
+  deleteLibTitle               :"刪除目標資料庫",
+  libraryMaxNumErr             :"目標資料庫數量已達上限",
+  addOk                        :"新增成功",
   updateOk                     :"修改成功",
   addTip                       :"新增",
-  targetSearchTip              :"请输入关键词",
-  addNewFaceInfo               :"单张导入", 
-  chooseFolder                 :"选择文件夹",
-  batchDelete                  :"批量删除",
-  sureDelete                   :"确定删除",
-  saveTip                      :"保 存",
+  targetSearchTip              :"請輸入關鍵字",
+  addNewFaceInfo               :"單一匯入",
+  chooseFolder                 :"選取資料夾",
+  batchDelete                  :"批量刪除",
+  sureDelete                   :"確定刪除",
+  saveTip                      :"儲存",
   sex_hanzi                    :"男",
   sex_meizi                    :"女",
-  idCardNumber                 :"证件号",
-                               
+  idCardNumber                 :"證件編號",                             
   cancelUpdate                 :"取消修改",
-  saveUpdate                   :"保存修改",
-  makeSure                     :"确认",
-  makeSure2                    :"确定",
-  faceMakeSureLoad             :"请确认当前人脸导入详情文件已被下载,关闭后您不能再下载此文件, 是否继续?",
-                               
-  emptyData                    :"暂无数据",
-                               
-  loginNameNull                :"用户名不能为空",
-  loginPwdNull                 :"密码不能为空",
-                               
-  TimeTo                       :"至",
-                               
-  noSupportVideo               :"图片模式下，暂不支持实时播放",
-                               
-  softUpdate                   :"软件升级",
-  loadUpdatePackage            :"导入升级文件",
-  clickLoadUpdate              :"选择升级文件",
-  softUpdateTip                :"此操作将会升级软件，是否继续？",
-  softUpdateSuccess            :"软件升级成功!请在20s秒刷新页面重新登录系统",
-  noChooseUpdateFile           :"您还没选择升级文件",
-  rebootTip                    :"此操作将会重启设备，是否继续？",
-  rebootTitle                  :"重启设备",
-  rebootSuccess                :"即将重启设备, 请等待约25秒后重新登录页面...",
-                               
-  export                       :"导入",
-  upgrade                      :"升级",
-                               
+  saveUpdate                   :"儲存修改",
+  makeSure                     :"確認",
+  makeSure2                    :"確定",
+  faceMakeSureLoad             :"請確認已下載目前的人臉匯入詳細資料檔，關閉後您不能再下載此檔案，是否繼續？",                             
+  emptyData                    :"暫無資料",                              
+  loginNameNull                :"使用者名稱不可空白",
+  loginPwdNull                 :"密碼不可空白",                             
+  TimeTo                       :"至",                         
+  noSupportVideo               :"图片模式下，暂不支持实时播放",                              
+  softUpdate                   :"軟體升級",
+  loadUpdatePackage            :"導入升級檔",//me
+  clickLoadUpdate              :"選取升級檔案",
+  softUpdateTip                :"此操作將會升級軟體，是否繼續？",
+  softUpdateSuccess            :"軟體升級成功！請在20秒內重新整理頁面，以重新登入系統",
+  noChooseUpdateFile           :"您尚未選取升級檔案",
+  rebootTip                    :"此操作將會重新啟動裝置，是否繼續？",
+  rebootTitle                  :"重新啟動裝置",
+  rebootSuccess                :"即將重新啟動裝置，請等待約25秒後重新登入頁面...",                         
+  export                       :"匯入",
+  upgrade                      :"升級",                             
   flag_yes                     :"是",
-  flag_no                      :"否",
+  flag_no                      :"否",                         
+  DNSSetErr                    :"DNS格式不正確",
                                
-  DNSSetErr                    :"DNS格式不正确",
-                               
-  ipAddrNull                   :"ip地址不能为空",
-  subNetNull                   :"子网掩码不能为空",
-  netWayNull                   :"网关不能为空",
-                               
-  dataTimeTitle                :"日期时间",
-                               
-  hourFomat                    :"小时制",
-  noChooseChannel              :"通道尚未选择",
-  channelNameNull              :"通道名称不能为空",
-  protocolNull                 :"协议尚未选择",                          
+  ipAddrNull                   :"ip位址不可空白",
+  subNetNull                   :"子網路遮罩不可空白",
+  netWayNull                   :"閘道不可空白",                          
+  dataTimeTitle                :"日期時間",      
+  hourFomat                    :"小時制",
+  noChooseChannel              :"尚未選取通道",
+  channelNameNull              :"通道名稱不可空白",
+  protocolNull                 :"尚未選取通訊協定",
   URLAddressNull               :"URL位址不可空白",//1.2*
-  IPAddressNull                :"IP地址不能为空",
-  IPAddressErr                 :"IP地址格式不正确",
-  portNotNull                  :"端口不能为空",
                                
-  inputInteger                 :"请输入整数数字值",
-  inputPort                    :"端口号的范围从0到65535",
-                               
-  chooseLibrary                :"选择目标库",
-                               
-  threshold                    :"阈值",
-  thresholdNotNull             :"阈值不能为空",
-  libFaceIsNull                :"未设置目标库",
-                               
+  // RTSPAddressNull              :"RTSP位址不可空白",
+  IPAddressNull                :"IP位址不可空白",
+  IPAddressErr                 :"IP位址格式不正確",
+  portNotNull                  :"連接埠不可空白",                       
+  inputInteger                 :"請輸入整數值",
+  inputPort                    :"連接埠號碼的範圍介於0至65535",                            
+  chooseLibrary                :"選取目標資源庫",
+  threshold                    :"閾值",
+  thresholdNotNull             :"閾值不可空白",
+  libFaceIsNull                :"未設定目標資源庫",                     
   updateBtn                    :"修改",
                                
   y_m_d                        :"年-月-日",
   m_d_y                        :"月-日-年",
   d_m_y                        :"日-月-年",
                                
-  pleChooseChannel             :"请选择通道",
-                               
+  pleChooseChannel             :"請選取通道",                             
   //https设置                  
-  httpsSettingMenu             :"安全设置",
-  httpsSettingTitle            :"https安全设置",
-  isUsingHttps                 :"是否开启https",
-  https_start                  :"启用",
-  https_unInstall              :"卸载",
-  https_upload                 :"上传",
-  https_cert_hp                :"点击选择SSL证书",
-  https_key_hp                 :"点击选择SSL密钥",
-  https_load_cert              :"导入证书",
-  https_cur_cert               :"当前证书",
-  https_cur_key                :"当前密钥",
-  https_load_key               :"导入密钥",
+  httpsSettingMenu             :"安全設定",//me
+  httpsSettingTitle            :"https安全性設定",
+  isUsingHttps                 :"是否開啟https",
+  https_start                  :"啟用",
+  https_unInstall              :"卸載",
+  https_upload                 :"上傳",
+  https_cert_hp                :"點選以選取SSL憑證",
+  https_key_hp                 :"點選以選取SSL金鑰",
+  https_load_cert              :"匯入憑證",
+  https_cur_cert               :"目前憑證",
+  https_cur_key                :"目前金鑰",
+  https_load_key               :"匯入金鑰",
                                
   //Flash相关                  
-  enableFlashTitle             :"安装或者启用FLASH播放器",
-  enableFlashTips              :"当前功能需要FLASH播放器支持，请先安装或者启用",
-                               
-  confirmChangeMQTTStatusTitle :"切换接入协议",
+  enableFlashTitle             :"安裝或啟用FLASH播放程式",
+  enableFlashTips              :"目前功能需要FLASH播放程式支援，請先安裝或啟用",
+  confirmChangeMQTTStatusTitle :"切換存取通訊協定",
   confirmChangeMQTTStatusTips  :"请慎重！切换接入协议，将会清空所有数据，是否确定",
-
-  https_key_no_choose          : "您尚未选择SSL密钥文件",
-  https_crt_no_choose          : "您尚未选择SSL证书文件",
-
+  https_key_no_choose          : "您尚未選取SSL金鑰檔案",
+  https_crt_no_choose          : "您尚未選擇SSL憑證檔案",
   //设备管理补缺
-  changeModeCl                 : "更改抓拍策略",
+  changeModeCl                 : "變更抓拍策略",
   Accurate                     : "精准",
-  Timing                       : "定时",
-  RealTime                     : "实时",
-
-  drawAreaMsg                  : "热区长或宽不能小于60px",
-
-  networkError                 : "网络异常",
+  Timing                       : "定時",
+  RealTime                     : "即時",
+  drawAreaMsg                  : "熱區長度或寬度不能小於60px",
+  networkError                 : "網路異常",
   manage                       : "管理",
-  notNull                      : "{name}不能为空",
-  valueErr                     : "{name}格式不正确",
-  uploadOk                     : "上传成功",
-  unInstallOk                  : "卸载成功",
-  
+  notNull                      : "{name}不可空白",
+  valueErr                     : "{name}格式不正確",
+  uploadOk                     : "上傳成功",
+  unInstallOk                  : "卸載成功",
   //1:N人脸对比
-  faceCtra_titComp             : "1:N比对",
-  faceCtra_grade               : "评分参考",
-  faceCtra_frist               : "0 ~ 60%: 这两张人像很有可能不是同一个人；",
-  faceCtra_second              : "60% ~ 85%: 这两张人像有可能是同一个人；",
-  faceCtra_third               : "85% ~ 100%: 这两张人像极有可能是同一个人！",
+  faceCtra_titComp             : "1:N比對",
+  faceCtra_grade               : "評分參考",
+  faceCtra_frist               : "0~60%： 這兩張人像很可能不是同一人；",
+  faceCtra_second              : "60%~85%： 這兩張人像可能是同一人；",
+  faceCtra_third               : "85% ~ 100%： 這兩張人像極可能是同一人！",
   faceCtra_target              :"請選取目標資源庫",//1.2+
-
   // M:N 对比
-  retri_tit                    : "比对",
+  retri_tit                    : "比對",
   retri_getResult              : "TOP-N",
-  compare_libary               :"请选择检索目标库",
-
+  compare_libary               :"請選取檢索目標資料庫",
   // 1.2.1
-  interface_protocol_conf      :"接口协议设置",
-  alarmRule_blacklist          :"黑名单",
-  alarmRule_whitelist          :"白名单",
+ interface_protocol_conf      :"介面通訊協定設定",
+ alarmRule_blacklist          :"黑名單",
+ alarmRule_whitelist          :"白名單",
   alarmRule_stranger           :"陌生人",
-
  // 库管理
   lib_custom_max_error         :"自訂屬性最多五個", //1.2 *
   minimum_face_pix_setting     :"最小人臉像素", //1.2 *
@@ -453,7 +426,7 @@ export default {
   newPwd_success               :"密碼修改成功", //1.2*
   place_ensure_newPwd          :"請輸入確認密碼", //1.2*
   pwd_inconsistency            :"密碼輸入不一致", //1.2*
-  reset_password               :"重設密碼", //1.2*
+  //reset_password               :"重設密碼", //1.2*
   pwd_Length                   :"密碼長度不小於8位數",//1.2*
   pwd_rules                    :"密碼應為8位數字母、數字和特殊符號組合",//1.2*
   user_rule                    :"應為字母、數字、字元 (@和._-)，長度&lt;50",//1.2+长度有限制，不超过60个字符例如：Should be letters,Numbers,characters (@ and. -),length <50（不准）
@@ -461,7 +434,6 @@ export default {
   logs_edit_content            :"記錄檔內容",//1.2*
   logs_edit_person             :"使用者",// 1.2*
   logs_edit_time               :"操作時間",//1.2*
-  // logs_logout                  :"登出",
   logs_open                    :"開機",//1.2*
   logs_off                     :"關機",//1.2*
   logs_web_off                 :"網路埠狀態",//1.2*
@@ -470,15 +442,15 @@ export default {
   logs_type                    :"記錄檔類型",//1.2*
   logopt_result                :"操作結果",//1.2*
   logopt_state_suc             :"成功",//1.2*
-  logsQuery                    :"查詢",//1.2*
-  logsFile                     :"日志文件",
-  FileSize                     :"檔案大小",//1.2*
+  // logsQuery                    :"查詢",//1.2*
+  // logsFile                     :"日志文件",
+  // FileSize                     :"檔案大小",//1.2*
   updateTime                   :"修改時間",//1.2*
   inputViperUrl                :"url",
-  inputViperUrlErr             :"url不能为空",
+ inputViperUrlErr              : "url不可空白",
   inputViperKey                :"key",
-  inputViperSwitch             :"开启",
-  inputViperKeyErr             :"key不能为空",
+ inputViperSwitch              : "開啟",
+ inputViperKeyErr              : "key不可空白",
   http_url                     :"http_url",
   http_key                     :"http_key",
   
@@ -515,21 +487,15 @@ export default {
   equipment_userdefined        :"自訂屬性",//1.2*
   default_value                :"預設值",//1.2*
   // equipment_dev_ip             :"设备IP",
-
   admin                        : "管理員",//1.2*
-
   add_user                     : "新增使用者",//1.2*
-
   add_role                     : "新增角色",//1.2*
   role_info                    : "角色詳細資料",//1.2*
   set_role                     : "編輯角色",//1.2*
   permission                   : "權限",//1.2*
-
   role_notnull                 : "角色名稱不可空白",//1.2*
-  
   role_del_title               : "刪除角色",//1.2*
   role_del_tip                 : "此操作將會永久刪除此角色，是否繼續？",//1.2*
-
   cur_user_pwd                 : "目前的使用者密碼",//1.2*
   cur_user_pwd_notnull         : "目前的使用者密碼不可空白",//1.2*
   user_notnull                 : "使用者名稱不可空白",//1.2*
@@ -544,5 +510,5 @@ export default {
   sys_restore_tips             : "除了網路及安全設定以外，其他模組均會恢復成原廠設定，是否繼續？", //1.2+,
   image_code_title             : "向右滑動完成拼圖",//1.2+
   image_code_error             : "請先完成拼圖驗證碼",//1.2+
-
+  all_user_name                : "全部用戶",
 };
