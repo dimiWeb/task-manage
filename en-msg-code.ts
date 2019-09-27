@@ -89,18 +89,5 @@
                 "1538"              :"Add relay",
                 "1539"              :"Delete relay",
 
-    },
-    sysCode:{
-        "1"                 :"Power-on", //1.2*
-        "2"                 :"Power-off",//1.2*
-        "3"                 :"Restart the system",//1.2*
-        "10"                :"LAN1 connected",//1.2*
-        "11"                :"LAN1 not connected",//1.2*
-        "20"                :"LAN2 connected",//1.2*
-        "21"                :"LAN2 not connected",//1.2*
-        "30"                :"LAN3 connected",//1.2*
-        "31"                :"LAN3 not connected",//1.2*
-        "40"                :"LAN4 connected",//1.2*
-        "41"                :"LAN4 not connected"//1.2*
 	}	
 }
