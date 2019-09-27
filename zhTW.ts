@@ -1,6 +1,7 @@
 ﻿import zhTWLocale from 'element-ui/lib/locale/lang/zh-TW'
 import errorCode  from "./zhTW-code"
-import msgCode from './zhTW-msg-code'
+import msgCode from "./zhTW-msg-code"
+import sysCode from "./zhTW-msg-code"
 export default {  
   // element-ui
   ...zhTWLocale,
@@ -8,6 +9,7 @@ export default {
   ...errorCode,
   // msgCode
   ...msgCode,
+  ...sysCode,
   //标题
  logoTitel                    :"智慧邊緣節點",
  //主菜单                       ",
@@ -19,21 +21,21 @@ export default {
  libraryManage                :"資料庫管理",//me
  oneToOne                     :"1:1比對",  
  retrieval                    :"以圖搜圖",  
-  eventManage                  :"事件管理",  
+  eventManage                  :"事件管理",  //1.2*
  alarmRuleSet                 :"警報快顯視窗",  
- signalLinkage                :"訊號聯動管理",  
- userManage                   :"用戶管理",
+  signalLinkage                :"信号联动管理", //1.2*
+  userManage                   :"用户管理", //1.2*
  sysSettings                  :"系統設定",
  generalSettings              :"一般設定",
  networkSettings              :"網路設定",
  deviceManage                 :"裝置管理",
  sysInfo                      :"系統資訊",
  storageManage                :"儲存管理",
-  sysManage                    :"系統管理",
+  sysManage                    :"系統管理", //1.2*
   interfaceProtocol            :"通訊介面",
-  logs                         :"系統日誌", //1.2  
-  logs_manage                  :"記錄管理", //1.2+
-  advancedSet                  :"高級設定", //1.2
+  logs                         :"系統記錄檔", //1.2* 
+  logs_manage                  :"日志管理", //1.2+
+  advancedSet                  :"進階設定", //1.2*
  languge                      :"語言",
  login                        :"登入",
  logout                       :"登出",
@@ -73,22 +75,22 @@ export default {
  deleteOk                     :"刪除成功",
  deleteError                  :"刪除失敗， ",
   //file                       
- chooseFile                   :"選取檔案",
- fileHint                     :"請確認已下載目前的匯出檔案，關閉後您需要重新匯出，是否繼續？",
- fileErrHint                  :"圖片上傳失敗，是否重新上傳？",
- uploadSuccess                :"圖片已上傳完成",
- putInSuccNumber              :"成功接收數量",
- putInErrNumber               :"接收失敗數量",
- uploadAgain                  :"重新上傳",
- //实时预览                     ",
- realTimeVideoTag             :"監控畫面",
- oneSplitScreen               :"一分割",//me
- fourSplitScreen              :"四分割",
- eightSplitScreen             :"八分割",
- autoMaticAlarm               :"自動顯示警報快顯視窗",
- captureInfo                  :"抓拍資訊",
- //抓拍记录                     ",
- captureTitle                 :"抓拍詳細資料",
+  chooseFile                   :"选择文件",
+  fileHint                     :"请确认当前导出文件已被下载,关闭后您需重新导出, 是否继续?",
+  fileErrHint                  :"图片上传失败，是否重新上传？",
+  uploadSuccess                :"图片已上传成功",
+  putInSuccNumber              :"入库成功数量",
+  putInErrNumber               :"入库失败数量",
+  uploadAgain                  :"重新上传",
+  //实时预览                   
+  realTimeVideoTag             :"监控视频",
+  oneSplitScreen               :"一分屏",
+  fourSplitScreen              :"四分屏",
+  eightSplitScreen             :"八分屏",
+  autoMaticAlarm               :"自动显示告警弹窗",
+  captureInfo                  :"抓拍信息",
+  //抓拍记录                   
+  captureTitle                 :"抓拍详情",
   allChannel                   :"所有通道",
  captureFigure                :"圖片",
  channelNumber                :"通道編號",
@@ -123,11 +125,11 @@ export default {
  face_ageTag                  :"年齡",
  face_sexTag                  :"性別",
   // 告警详情下新增的字段
-  face_mask                    :"口罩", // 1.2 +
-  face_glasses                 :"眼鏡", // 1.2 +
-  face_mustache                :"鬍子", // 1.2 +
+  face_mask                    :"面罩", // 1.2 +
+  face_glasses                 :"眼镜", // 1.2 +
+  face_mustache                :"胡子", // 1.2 +
   face_have                    :"有", // 1.2+
-  face_no                      :"無",// 1.2+
+  face_no                      :"无",// 1.2+
 
  face_rl_addTitle             :"新增目標來源",
   face_rl_addTitle             :"新增目标源",
@@ -197,14 +199,14 @@ export default {
  sys_equ_clMod_ds             :"定時模式",
  sys_equ_clMod_ss             :"即時模式",
  sys_equ_imgMode1             :"抓拍攝影機",
- sys_equ_imgMode2             :"網路攝影機",
-  sys_equ_serverID             :"SIP伺服器ID",
-  sys_equ_noserverID           :"SIP伺服器ID不能為空",
-  sys_equ_cameraID             :"SIP相機ID",
-  sys_equ_nocameraID           :"SIP相機ID不能為空",
-  sys_equ_port_spi             :"SIP伺服器埠",
-  sys_equ_ip_address_spi       :"SIP伺服器IP",
- ////添加&修改&查看             ",
+  sys_equ_serverID             :"SIP伺服器ID",//1.2*
+  sys_equ_noserverID           :"SIP伺服器ID不可空白", //1.2*
+  sys_equ_cameraID             :"SIP相機ID",//1.2*
+  sys_equ_nocameraID           :"SIP相機ID不可空白",//1.2*
+  sys_equ_port_spi             :"SIP伺服器連接埠ID",//1.2*
+  sys_equ_ip_address_spi       :"SIP伺服器IP",//1.2*
+  ////添加&修改&查看           
+  sys_equ_title_show           :"设备详情",
   sys_equ_title_show           :"設備詳情",
   sys_equ_title_edit           :"編輯設備",
   sys_equ_title_dele           :"刪除設備",
@@ -218,7 +220,7 @@ export default {
   sys_equ_codeStream           :"碼流",
   sys_equ_ipAddr               :"IP地址",
  sys_equ_equAddr              :"相機位置",
- //热区绘制                     ",
+  //热区绘制                   
  hotToDraw_title              :"繪製熱區",
  //系统信息                     ",
  sys_info_version             :"版本資訊",
@@ -229,9 +231,9 @@ export default {
  sys_info_sysReboot           :"系統重啟",//me
  sys_info_reboot              :"啟動",//me
 
-  system_resource              : "系统资源",
-  cpu_usage                    : "CPU 使用率",
-  memory_usage                 : "内存使用率",
+  system_resource              : "系統資源", // 1.2*
+  cpu_usage                    : "CPU使用率", // 1.2*
+  memory_usage                 : "記憶體使用率", // 1.2*
   
  //存储管理                     ",
  sys_save_setting             :"儲存設定",
@@ -241,9 +243,9 @@ export default {
  sys_save_strategy            :"儲存策略",
  sys_save_fullCover           :"錄滿即覆寫",
  sys_save_fullStop            :"錄滿即停止",
-  sys_save_emptyRecord         :"清空記錄",//1.2+
-  sys_save_warn                :"此項操作將清空抓拍和警報記錄，是否清空？",//1.2+
-  sys_save_delSucc             :"抓拍和警報記錄已清空", //1.2+
+  sys_save_emptyRecord         :"清空记录",//1.2+
+  sys_save_warn                :"此操作将清空抓拍和告警记录，是否继续?",//1.2+
+  sys_save_delSucc             :"抓拍和告警记录已清空", //1.2+
   //接口协议                   
  sys_api_equId                :"裝置ID",
  sys_api_produce              :"存取通訊協定",
@@ -328,7 +330,7 @@ export default {
                                
   TimeTo                       :"至",
                                
- noSupportVideo               :"在圖片模式下，暫時不支援即時播放",
+  noSupportVideo               :"图片模式下，暂不支持实时播放",
                                
  softUpdate                   :"軟體升級",
  loadUpdatePackage            :"導入升級檔",//me
@@ -358,7 +360,7 @@ export default {
  noChooseChannel              :"尚未選取通道",
  channelNameNull              :"通道名稱不可空白",
  protocolNull                 :"尚未選取通訊協定",
-  URLAddressNull               :"URL地址不能为空",
+  URLAddressNull               :"URL位址不可空白",//1.2*
   IPAddressNull                :"IP地址不能为空",
   IPAddressErr                 :"IP地址格式不正确",
   portNotNull                  :"端口不能为空",
@@ -432,7 +434,7 @@ export default {
  faceCtra_frist               : "0~60%： 這兩張人像很可能不是同一人；",
  faceCtra_second              : "60%~85%： 這兩張人像可能是同一人；",
  faceCtra_third               : "85% ~ 100%： 這兩張人像極可能是同一人！",
-  faceCtra_target              :"請選取目標資源庫",//1.2+
+  faceCtra_target              :"请选择目标库",//1.2+
 
   // M:N 对比
  retri_tit                    : "比對",
@@ -446,39 +448,41 @@ export default {
   alarmRule_stranger           :"陌生人",
 
  // 库管理
-  lib_custom_max_error         :"自定义属性最多五个",
-  minimum_face_pix_setting     :"最小人脸像素设置",
- detection_frame_rate         :"检测帧率",
+  lib_custom_max_error         :"自訂屬性最多五個", //1.2 *
+  minimum_face_pix_setting     :"最小人臉像素", //1.2 *
+  maximum_face_pix_setting     :"最大人臉像素", // 1.2*
+  detection_frame_rate         :"偵測影格速率", // 1.2 *
   // 用户管理
-  user_info                    :"用户",
-  user_role                    :"角色",
-  user_onLineOr                :"用户在线状态",
-  edit_password                :"修改密码",
-  input_newPwd                 :"新密码",
-  plInput_newPwd               :"请输入新密码",
-  plInput_en_newPwd            :"请确认密码",
-  ensure_newPwd                :"确认密码",
-  pwd_inconsistency            :"两次密码输入不一致",
-  pwd_Length                   :"密码长度不小于8位",
-  pwd_rules                    :"密碼應為8位字母、數位和特殊符號組合",
-  user_rule                    :"應為字母、數字、字元 (@和._-)，長度&lt;50",//1.2+
+  user_role                    :"角色名稱", //1.2 *
+  edit_password                :"修改密碼", //1.2 *
+  input_newPwd                 :"新密碼",//1.2*
+  plInput_newPwd               :"請輸入密碼", //1.2*
+  plInput_en_newPwd            :"請確認密碼", //1.2*
+  ensure_newPwd                :"確認密碼", // 1.2*
+  newPwd_success               :"密碼修改成功", //1.2*
+  place_ensure_newPwd          :"請輸入確認密碼", //1.2*
+  pwd_inconsistency            :"密碼輸入不一致", //1.2*
+  reset_password               :"重設密碼", //1.2*
+  pwd_Length                   :"密碼長度不小於8位數",//1.2*
+  pwd_rules                    :"密碼應為8位數字母、數字和特殊符號組合",//1.2*
+  user_rule                    :"应为字母、数字、字符(@和._-)，长度&lt;50",//1.2+长度有限制，不超过60个字符例如：Should be letters,Numbers,characters (@ and. -),length <50（不准）
   // 系统日志
-  logs_edit_content            :"日志内容",
-  logs_edit_person             :"用户",
-  logs_edit_time               :"操作时间",
+  logs_edit_content            :"記錄檔內容",//1.2*
+  logs_edit_person             :"使用者",// 1.2*
+  logs_edit_time               :"操作時間",//1.2*
   // logs_logout                  :"登出",
-  logs_open                    :"开机",
-  logs_off                     :"关机",
-  logs_web_off                 :"网口状态",
-  logs_edit_user               :"操作日志",
-  logs_fun_edit                :"功能操作",
-  logs_type                    :"日志类型",
-  logopt_result                :"操作结果",
-  logopt_state_suc             :"成功",
-  logsQuery                    :"查詢",
-  logsFile                     :"日誌檔",
-  FileSize                     :"檔案大小",
-  updateTime                   :"修改時間",
+  logs_open                    :"開機",//1.2*
+  logs_off                     :"關機",//1.2*
+  logs_web_off                 :"網路埠狀態",//1.2*
+  logs_edit_user               :"動作記錄檔",//1.2*
+  logs_fun_edit                :"功能操作",//1.2*
+  logs_type                    :"記錄檔類型",//1.2*
+  logopt_result                :"操作結果",//1.2*
+  logopt_state_suc             :"成功",//1.2*
+  logsQuery                    :"查詢",//1.2*
+  logsFile                     :"日志文件",
+  FileSize                     :"檔案大小",//1.2*
+  updateTime                   :"修改時間",//1.2*
   inputViperUrl                :"url",
  inputViperUrlErr              : "url不可空白",
   inputViperKey                :"key",
@@ -488,65 +492,66 @@ export default {
   http_key                     :"http_key",
   
 // 信号联动管理
-  device_name                  :"關聯設備名稱",
-  device_name_notNull          :"關聯設備名稱不能為空",
-  device_detail                :"關聯設備詳情",
-  device_sys_equ_equType       :"關聯設備類型",
-  assoc_device_ip              :"關聯設備IP",
-  assoc_device_ip_notNull      :"關聯設備IP不能為空",
-  assoc_device_ip_IPErr        :"關聯設備IP格式不正確",
-  assoc_sys_equ_port           :"關聯端口",
-  assoc_sys_equ_port_notNull   :"關聯端口不能為空",
-  assoc_sys_equ_port_inputPort :"關聯端口範圍從0到65535",
-  assoc_new_device             :"添加關聯設備",
-  relay_new                    :"繼電器",
-  select_device                :"選擇設備",
-  delete_assoc                 :"此操作將會永久刪除關聯設備，是否繼續？",
-  delete_assocTitle            :"刪除關聯設備",
-  assoc_channelName            :"通道名稱",   
+  device_name                  :"關聯裝置名稱",//1.2*
+  device_name_notNull          :"關聯裝置名稱不可空白",//1.2*
+  device_detail                :"檢視詳細資料",//1.2*
+  device_sys_equ_equType       :"關聯裝置類型",//1.2*
+  assoc_device_ip              :"關聯裝置IP",//1.2*
+  assoc_device_ip_notNull      :"關聯裝置IP不可空白",//1.2*
+  assoc_device_ip_IPErr        :"關聯裝置IP格式不正確",//1.2*
+  assoc_sys_equ_port           :"關聯連接埠",//1.2*
+  assoc_sys_equ_port_notNull   :"關聯連接埠不可空白",//1.2*
+  assoc_sys_equ_port_inputPort :"關聯連接埠號碼的範圍介於0至65535",//1.2*
+  assoc_new_device             :"新增關聯裝置",//1.2*
+  relay_new                    :"繼電器",//1.2*
+  select_device                :"選取裝置",//1.2*
+  delete_assoc                 :"此操作將會永久刪除關聯裝置，是否繼續？",//1.2*
+  delete_assocTitle            :"刪除關聯裝置",//1.2*
+  assoc_channelName            :"通道名稱", //1.2*
 
-  select_all                   : "全選",
+  select_all                   : "全選",//1.2*
 
-  manufacturer                 : "廠商",
+  manufacturer                 : "廠商",//1.2*
   dahua                        : "Dahua",
   hikvision                    : "HIKVISION",
   sensedlc11                   : "SenseDLC",
   // 高级设置
-  adv_warn                     :"輸入有誤,應為整數且在{min}—{max}之間",
-  adv_betwwennum               :"最大值不能小於最小值",
+  adv_warn                     :"輸入錯誤，應為整屬且在{min}—{max}之間",//1.2*
+  adv_betwwennum               :"最大值不能小於最小值",//1.2*
 // 信号联动管理
   // equipment_associated         :"设备关联",
-  equipment_nonull             :"不能为空",
-  equipment_userdefined        :"自定义属性",
-  default_value                :"默认值",
+  equipment_nonull             :"不可空白",//1.2*
+  equipment_userdefined        :"自訂屬性",//1.2*
+  default_value                :"預設值",//1.2*
   // equipment_dev_ip             :"设备IP",
-  admin                        : "管理員",
-  all_user_name                : "全部用户",
 
-  add_user                     : "新增用户",
+  admin                        : "管理員",//1.2*
 
-  add_role                     : "新增角色",
-  role_info                    : "角色详情",
-  set_role                     : "编辑角色",
-  permission                   : "权限",
+  add_user                     : "新增使用者",//1.2*
 
-  role_notnull                 : "角色名不能为空",
+  add_role                     : "新增角色",//1.2*
+  role_info                    : "角色詳細資料",//1.2*
+  set_role                     : "編輯角色",//1.2*
+  permission                   : "權限",//1.2*
+
+  role_notnull                 : "角色名稱不可空白",//1.2*
   
-  role_del_title               : "删除角色",
-  role_del_tip                 : "此操作将会永久删除此角色，是否继续？",
+  role_del_title               : "刪除角色",//1.2*
+  role_del_tip                 : "此操作將會永久刪除此角色，是否繼續？",//1.2*
 
-  cur_user_pwd                 : "当前用户密码",
-  cur_user_pwd_notnull         : "当前用户密码不能为空",
-  user_notnull                 : "用户名不能为空",
-  role_choose                  : "请选择角色",
-  set_user                     : "编辑用户",
-  confirm_pwd                  : "密码验证",
-  user_del_title               : "删除用户",
-  user_del_tip                 : "此操作将会永久删除此用户，是否继续？",
-  user_info                    : "用户详情",
-  creater                      : "创建人",
-  sys_restore_title            : "恢復預設設定",//1.2+
-  sys_restore_tips             : "除了網路及安全設定以外，其他模組均會恢復成原廠設定，是否繼續？", //1.2+,
-  image_code_title             : "向右滑動完成拼圖",//1.2+
-  image_code_error             : "請先完成拼圖驗證碼",//1.2+
+  cur_user_pwd                 : "目前的使用者密碼",//1.2*
+  cur_user_pwd_notnull         : "目前的使用者密碼不可空白",//1.2*
+  user_notnull                 : "使用者名稱不可空白",//1.2*
+  role_choose                  : "請選取角色",//1.2*
+  set_user                     : "編輯使用者",//1.2*
+  confirm_pwd                  : "密碼驗證",//1.2*
+  user_del_title               : "刪除使用者",//1.2*
+  user_del_tip                 : "此操作將會永久刪除此使用者，是否繼續？",//1.2*
+  user_info                    : "使用者詳細資料", // 1.2 *
+  creater                      : "建立者",//1.2*
+  sys_restore_title            : "恢复默认配置",//1.2+
+  sys_restore_tips             : "除网络及安全设置外，其他模块均恢复出厂设置，是否继续？", //1.2+,
+  image_code_title             : "向右滑动完成拼图",//1.2+
+  image_code_error             : "请先完成拼图验证码",//1.2+
+
 };
