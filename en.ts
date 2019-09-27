@@ -7,8 +7,8 @@ export default {
   ...enLocale,
   //errorCode
   ...errorCode,
+  // msgCode
   ...msgCode,
-  ...sysCode,
   //标题
   logoTitel                    :"Intelligent Edge Device",
   //主菜单                     
@@ -33,7 +33,7 @@ export default {
   sysManage                    :"System Management",
   interfaceProtocol            :"Interface Protocol",
   logs                         :"Log Management", //1.2
-  logs_manage                  :"日志管理", //1.2+
+  logs_manage                  :"Log Management", //1.2+
   advancedSet                  :"Advanced Settings", //1.2
   languge                      :"Language",
   login                        :"Login",
@@ -124,19 +124,20 @@ export default {
   face_ageTag                  :"Age",
   face_sexTag                  :"Gender",
   // 告警详情下新增的字段
-  face_mask                    :"面罩",
-  face_glasses                 :"眼镜",
-  face_mustache                :"胡子",
-  face_have                    :"有", // 1.2+
-  face_no                      :"无",// 1.2+
-  //人脸库-新增                  ",
+  face_mask                    :"Mask", // 1.2 +
+  face_glasses                 :"Glasses", // 1.2 +
+  face_mustache                :"Mustache", // 1.2 +
+  face_have                    :"Yes", // 1.2+
+  face_no                      :"No",// 1.2+
+
   face_rl_addTitle             :"Add target source",
-  //人脸库-编辑                  ",
+  face_rl_addTitle             :"新增目标源",
   face_rl_eidtTitle            :"Edit person info",
-  //人脸库-详情                  ",
+  face_rl_eidtTitle            :"编辑人员信息",
   face_rl_infoTitle            :"Person Details",
   face_rl_delete               :"Delete",
   face_rl_edit                 :"Edit Attribute",
+  face_rl_edit                 :"修改属性",
   //删除                       
   face_noChoose                :"You haven't selected a record",
   face_onlyDelete              :"You can delete up to 50 records",
@@ -231,12 +232,15 @@ export default {
   sys_info_sysReboot           :"System Restart",
   sys_info_reboot              :"Restart",
 
+  system_resource              : "系统资源",
+  cpu_usage                    : "CPU使用率",
+  memory_usage                 : "内存使用率",
   
   system_resource              : "System Resources",
   cpu_usage                    : "CPU Usage",
   memory_usage                 : "MEM Usage",
-  
-  //存储管理                     ",
+  sys_save_residue             :"剩余(MB)",
+  sys_save_plan                :"存储计划",
   sys_save_setting             :"Storage Settings",
   sys_save_all                 :"Total (MB)",
   sys_save_residue             :"Free (MB)",
@@ -244,10 +248,10 @@ export default {
   sys_save_strategy            :"Storage Strategy",
   sys_save_fullCover           :"Refill",
   sys_save_fullStop            :"Freeze",
-  sys_save_emptyRecord         :"清空记录",//1.2+
-  sys_save_warn                :"此操作将清空抓拍和告警记录，是否继续?",//1.2+
-  sys_save_delSucc             :"抓拍和告警记录已清空", //1.2+
-  //接口协议                     ",
+  sys_api_equId                :"设备ID",
+  sys_api_produce              :"接入协议",
+  sys_api_mqttPort             :"mqtt端口",
+  sys_api_mqttName             :"mqtt用户名",
   sys_api_equId                :"Device ID",
   sys_api_produce              :"Access Protocol",
   sys_api_mqttPort             :"mqtt Port",
@@ -343,8 +347,8 @@ export default {
   rebootTitle                  :"Restart",
   rebootSuccess                :"The device will be restarted. Please log in again in about 25s…",
                                
-  export                       :"导 入",
-  upgrade                      :"升 级",
+  export                       :"导入",
+  upgrade                      :"升级",
                                
   flag_yes                     :"Yes",
   flag_no                      :"No",
@@ -361,8 +365,12 @@ export default {
   noChooseChannel              :"The channel has not been selected",
   channelNameNull              :"The channel name cannot be empty",
   protocolNull                 :"The protocol has not been selected",
+  URLAddressNull               :"URL地址不能为空",
+  IPAddressNull                :"IP地址不能为空",
+  IPAddressErr                 :"IP地址格式不正确",
+  portNotNull                  :"端口不能为空",
                                
-  RTSPAddressNull              :"RTSP地址不能为空",
+  inputInteger                 :"请输入整数数字值",
   IPAddressNull                :"The IP address cannot be empty",
   IPAddressErr                 :"Incorrect IP address format",
   portNotNull                  :"The port cannot be empty",
@@ -371,12 +379,14 @@ export default {
   inputPort                    :"The port numbers range from 0 to 65535",
                                
   chooseLibrary                :"Select Database",
+  thresholdNotNull             :"阈值不能为空",
+  libFaceIsNull                :"未设置目标库",
                                
   threshold                    :"Threshold",
   thresholdNotNull             :"The threshold cannot be empty",
   libFaceIsNull                :"No database",
                                
-  updateBtn                    :"修 改",
+  updateBtn                    :"修改",
                                
   y_m_d                        :"Year-month-day",
   m_d_y                        :"Month-day-year",
@@ -429,6 +439,7 @@ export default {
   faceCtra_frist               : "0 ~ 60%: The two images are probably not the same person;",
   faceCtra_second              : "60% ~ 85%: The two images might be the same person;",
   faceCtra_third               : "85% ~ 100%: The two images are most likely the same person!",
+  faceCtra_target              :"Please select a target database",//1.2+
 
   // M:N 对比
   retri_tit                    : "Compare",
@@ -441,7 +452,7 @@ export default {
   alarmRule_whitelist          :"Whitelist",
   alarmRule_stranger           :"Stranger",
 
-  // // 库管理
+ // 库管理
   // lib_custom_max_error         :"自定义属性最多五个",
   minimum_face_pix_setting     :"Min. Face Size",
   maximum_face_pix_setting     :"Max. Face Size",
@@ -477,13 +488,14 @@ export default {
   logsFile                     :"Log Files",
   FileSize                     :"Size",
   updateTime                   :"Modification time",
-  inputViperUrl                 : "url",
+  inputViperUrl                :"url",
   inputViperUrlErr             : "url cannot be empty",
-  inputViperSwitch             : "Enable",
-  inputViperKey                : "key",
-  inputViperKeyErr             : "key cannot be empty",
-  http_url                      : "http_url",
-  http_key                      : "http_key",
+  inputViperKey                :"key",
+  inputViperSwitch             :"Enable",
+  inputViperKeyErr             :"key cannot be empty",
+  http_url                     :"http_url",
+  http_key                     :"http_key",
+  
 // 信号联动管理
   device_name                  :"Controller Name",
   device_name_notNull          :"Controller name cannot be empty",
@@ -508,10 +520,10 @@ export default {
   dahua                        : "Dahua",
   hikvision                    : "HIKVISION",
   sensedlc11                   : "SenseDLC",
-    // 高级设置
+  // 高级设置
   adv_warn                     :"Input error, must be integer ({min}-{max})",
   adv_betwwennum               :"Max. Size cannot smaller than Min. Size",
-  // 信号联动管理
+// 信号联动管理
   // equipment_associated         :"设备关联",
   equipment_nonull             :"不能为空",
   equipment_userdefined        :"自定义属性",
@@ -519,4 +531,31 @@ export default {
   // equipment_dev_ip             :"设备IP",
   admin                        : "Administrator",
   all_user_name                : "全部用户",
+
+  add_user                     : "新增用户",
+
+  add_role                     : "新增角色",
+  role_info                    : "角色详情",
+  set_role                     : "编辑角色",
+  permission                   : "权限",
+
+  role_notnull                 : "角色名不能为空",
+  
+  role_del_title               : "删除角色",
+  role_del_tip                 : "此操作将会永久删除此角色，是否继续？",
+
+  cur_user_pwd                 : "当前用户密码",
+  cur_user_pwd_notnull         : "当前用户密码不能为空",
+  user_notnull                 : "用户名不能为空",
+  role_choose                  : "请选择角色",
+  set_user                     : "编辑用户",
+  confirm_pwd                  : "密码验证",
+  user_del_title               : "删除用户",
+  user_del_tip                 : "此操作将会永久删除此用户，是否继续？",
+  user_info                    : "用户详情",
+  creater                      : "创建人",
+  sys_restore_title            : "Restore Default",//1.2+
+  sys_restore_tips             : "This operation will restore the default settings of all modules except network and security settings, continue?", //1.2+,
+  image_code_title             : "Slide to complete image stitching",//1.2+
+  image_code_error             : "Please enter the verification code for image stitching",//1.2+
 };
