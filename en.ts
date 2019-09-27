@@ -11,7 +11,7 @@ export default {
   ...msgCode,
   ...sysCode,
   //标题
-  logoTitel                    :"智能边缘节点",
+  logoTitel                    :"Intelligent Edge Device",
   //主菜单                     
   realTimeVideo                :"Live Preview",
   recordQuery                  :"Record Query",  
@@ -230,18 +230,13 @@ export default {
   sys_info_sysReboot           :"System Restart",
   sys_info_reboot              :"Restart",
 
-  system_resource              : "System Resources", // 1.2*
-  cpu_usage                    : "CPU Usage", // 1.2*
-  memory_usage                 : "Memory Usage", // 1.2*
   
   //存储管理                   
   system_resource              : "System Resources",
   cpu_usage                    : "CPU Usage",
   memory_usage                 : "MEM Usage",
-  sys_save_plan                :"存储计划",
   sys_save_setting             :"Storage Settings",
   sys_save_all                 :"Total (MB)",
-  sys_save_fullCover           :"满覆盖",
   sys_save_residue             :"Free (MB)",
   sys_save_plan                :"Storage Plan",
   sys_save_strategy            :"Storage Strategy",
@@ -256,17 +251,10 @@ export default {
   sys_api_mqttName             :"mqtt Username",
   sys_api_mqttPwd              :"mqtt Password",
   sys_api_title                :"HTTP Configuration",
-  sys_save_fullStop            :"满即停",
-  sys_save_emptyRecord         :"清空记录",//1.2+
-  sys_save_warn                :"此操作将清空抓拍和告警记录，是否继续?",//1.2+
-  sys_save_delSucc             :"抓拍和告警记录已清空", //1.2+
+  sys_save_emptyRecord         :"Clear Records",//1.2+
+  sys_save_warn                :"This operation will clear capture records and alarm records?",//1.2+
+  sys_save_delSucc             :"Capture records and alarm records are cleared.", //1.2+
   //接口协议                   
-  sys_api_equId                :"设备ID",
-  sys_api_produce              :"接入协议",
-  sys_api_mqttPort             :"mqtt端口",
-  sys_api_mqttName             :"mqtt用户名",
-  sys_api_mqttPwd              :"mqtt密码",
-  sys_api_title                :"HTTP配置",
   //输入提示                   
   inputError                   :"There are still empty fields",
   //placehor                   
@@ -356,8 +344,8 @@ export default {
   rebootTitle                  :"Restart",
   rebootSuccess                :"The device will be restarted. Please log in again in about 25s…",
                                
-  export                       :"导入",
-  upgrade                      :"升级",
+  export                       :"Import",
+  upgrade                      :"Upgrade",
                                
   flag_yes                     :"Yes",
   flag_no                      :"No",
@@ -373,36 +361,23 @@ export default {
   hourFomat                    :"Hour System",
   noChooseChannel              :"The channel has not been selected",
   channelNameNull              :"The channel name cannot be empty",
-  protocolNull                 :"The protocol has not been selected",
-  URLAddressNull               :"URL地址不能为空",
-  noChooseChannel              :"通道尚未选择",
-  channelNameNull              :"通道名称不能为空",
-  protocolNull                 :"协议尚未选择",                          
+  protocolNull                 :"The protocol has not been selected",                 
   URLAddressNull               :"The URL cannot be empty.",//1.2*
-  IPAddressNull                :"IP地址不能为空",
-  IPAddressErr                 :"IP地址格式不正确",
-  portNotNull                  :"端口不能为空",
                                
   IPAddressNull                :"The IP address cannot be empty",
   IPAddressErr                 :"Incorrect IP address format",
   portNotNull                  :"The port cannot be empty",
-  inputInteger                 :"请输入整数数字值",
-  inputPort                    :"端口号的范围从0到65535",
+  inputInteger                 :"Please enter an integer value",
+  inputPort                    :"The port numbers range from 0 to 65535",
                                
-  chooseLibrary                :"选择目标库",
+  chooseLibrary                :"Select Database",
                                
-  threshold                    :"阈值",
-  thresholdNotNull             :"阈值不能为空",
-  libFaceIsNull                :"未设置目标库",
                                
   threshold                    :"Threshold",
   thresholdNotNull             :"The threshold cannot be empty",
   libFaceIsNull                :"No database",
-  updateBtn                    :"修改",
-                               
-  y_m_d                        :"年-月-日",
-  m_d_y                        :"月-日-年",
-  d_m_y                        :"日-月-年",
+  updateBtn                    :"Modify",
+
                                
   y_m_d                        :"Year-month-day",
   m_d_y                        :"Month-day-year",
@@ -500,7 +475,6 @@ export default {
   logopt_state_suc             :"Successful",//1.2*
   logsFile                     :"Log Files",
   logsQuery                    :"Search",//1.2*
-  logsFile                     :"日志文件",
   FileSize                     :"File Size",//1.2*
   updateTime                   :"Modification Time",//1.2*
   inputViperUrl                :"url",
@@ -544,42 +518,19 @@ export default {
   equipment_userdefined        :"Custom Attributes",//1.2*
   default_value                :"Default Value",//1.2*
   // equipment_dev_ip             :"设备IP",
-  admin                        : "Administrator",
   all_user_name                : "全部用户",
-  add_user                     : "新增用户",
-  add_role                     : "新增角色",
-  role_info                    : "角色详情",
-  set_role                     : "编辑角色",
-  permission                   : "权限",
 
   admin                        : "Administrator",//1.2*
 
   add_user                     : "Add User",//1.2*
 
-  cur_user_pwd                 : "当前用户密码",
-  cur_user_pwd_notnull         : "当前用户密码不能为空",
-  user_notnull                 : "用户名不能为空",
-  role_choose                  : "请选择角色",
-  set_user                     : "编辑用户",
-  confirm_pwd                  : "密码验证",
-  user_del_title               : "删除用户",
-  user_del_tip                 : "此操作将会永久删除此用户，是否继续？",
-  user_info                    : "用户详情",
-  creater                      : "创建人",
-  sys_restore_title            : "Restore Default",//1.2+
-  sys_restore_tips             : "This operation will restore the default settings of all modules except network and security settings, continue?", //1.2+,
-  image_code_title             : "Slide to complete image stitching",//1.2+
-  image_code_error             : "Please enter the verification code for image stitching",//1.2+
   add_role                     : "Add Role",//1.2*
   role_info                    : "Role Details",//1.2*
   set_role                     : "Edit Role",//1.2*
   permission                   : "Permission",//1.2*
-
-  role_notnull                 : "The role name cannot be empty.",//1.2*
-  
+  role_notnull                 : "The role name cannot be empty.",//1.2* 
   role_del_title               : "Delete Role",//1.2*
   role_del_tip                 : "This operation will permanently delete the role, continue?",//1.2*
-
   cur_user_pwd                 : "Password of the Current User",//1.2*
   cur_user_pwd_notnull         : "The password of the current user cannot be empty.",//1.2*
   user_notnull                 : "The username cannot be empty.",//1.2*
@@ -590,9 +541,9 @@ export default {
   user_del_tip                 : "This operation will permanently delete the user, continue?",//1.2*
   user_info                    : "User Details", // 1.2 *
   creater                      : "Created By",//1.2*
-  sys_restore_title            : "恢复默认配置",//1.2+
-  sys_restore_tips             : "除网络及安全设置外，其他模块均恢复出厂设置，是否继续？", //1.2+,
-  image_code_title             : "向右滑动完成拼图",//1.2+
-  image_code_error             : "请先完成拼图验证码",//1.2+
+  sys_restore_title            : "Restore Default",//1.2+
+  sys_restore_tips             : "This operation will restore the default settings of all modules except network and security settings, continue?", //1.2+,
+  image_code_title             : "Slide to complete image stitching",//1.2+
+  image_code_error             : "Please enter the verification code for image stitching",//1.2+
 
 };
