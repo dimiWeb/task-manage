@@ -1,53 +1,56 @@
-import enLocale from 'element-ui/lib/locale/lang/en'
+﻿import enLocale from 'element-ui/lib/locale/lang/en'
 import errorCode  from "./en-code"
-import msgCode from './en-msg-code'
-export default {
+import msgCode  from "./en-msg-code"
+import sysCode from "./en-msg-code"
+export default {  
   // element-ui
   ...enLocale,
-    //errorCode
+  //errorCode
   ...errorCode,
-  // msgCode
   ...msgCode,
-    //标题
+  ...sysCode,
+  //标题
   logoTitel                    :"Intelligent Edge Device",
-  //主菜单                       ",
+  //主菜单                     
   realTimeVideo                :"Live Preview",
-  recordQuery                  :"Record Query", //1.2
+  recordQuery                  :"Record Query",  
   snapshotQuery                :"Capture Record Query",
   alarmQuery                   :"Alarm Record Query",
-  faceService                  :"Face Service",  //1.2
-  libraryManage                :"Target Database Management",
-  oneToOne                     :"1:1 Comparison",  //1.2
-  retrieval                    :"Image Retrieval",  // 1.2  
-  eventManage                  :"Events Management",  //1.2
-  alarmRuleSet                 :"Alarm Popup",  //1.2
-  signalLinkage                :"Signal Linkage",  //1.2
-  userManage                   :"User Management", //1.2
+  faceService                  :"Intelligent Service", 
+  libraryManage                :"Portrait Database Management",
+  oneToOne                     :"1:1 Comparison",  
+  retrieval                    :"Image Retrieval",  
+  eventManage                  :"Events Management", 
+  alarmRuleSet                 :"Alarm Pop-ups",  
+  signalLinkage                :"Signal Linkage",  
+  userManage                   :"User management", 
   sysSettings                  :"System Settings",
   generalSettings              :"General Settings",
   networkSettings              :"Network Settings",
   deviceManage                 :"Device Management",
   sysInfo                      :"System Information",
   storageManage                :"Storage Management",
+  sysManage                    :"System Management",
   interfaceProtocol            :"Interface Protocol",
   logs                         :"Log Management", //1.2
+  logs_manage                  :"日志管理", //1.2+
   advancedSet                  :"Advanced Settings", //1.2
   languge                      :"Language",
   login                        :"Login",
   logout                       :"Logout",
-  //导出                         ",
+  //导出                       
   totalNumTip                  :"You can export up to {num} records at a time",
   curNumTip                    :"Current total records: {num}",
   batchExport                  :"Batch Export",
   exportInterval               :"Export quantity range",
   startExport                  :"Start",
   endExport                    :"End",
-  //通用                         ",
-  submitTag                    :"Search",
-  exportAllTag                 :"Export all",
+  //通用                       
+  submitTag                    :"OK",
+  exportAllTag                 :"Export All",
   filterCondition              :"Filter by",
   exportTag                    :"Export",
-  seqNumber                    :"ID",
+  seqNumber                    :"No.",
   operation                    :"Operation",
   showDetail                   :"View Details",
   allTip                       :"All",
@@ -66,11 +69,11 @@ export default {
   hint                         :"Tips",
   details                      :"Details",
   settingSuccess               :"OK",
-  faceLead                     :"Image Import",
+  faceLead                     :"Batch Import",
   confDelete                   :"Delete",
   deleteOk                     :"OK",
-  deleteError                  :"Failed to delete",
-  //file                         ",
+  deleteError                  :"Failed to delete ",
+  //file                       
   chooseFile                   :"Select Files",
   fileHint                     :"Please confirm that the current export file has been downloaded. After closing, you will need to export again. Continue?",
   fileErrHint                  :"Uploading an image failed, re-upload?",
@@ -78,64 +81,70 @@ export default {
   putInSuccNumber              :"Successes",
   putInErrNumber               :"Failures",
   uploadAgain                  :"Re-upload",
-  //实时预览                     ",
+  //实时预览                   
   realTimeVideoTag             :"Live Stream",
   oneSplitScreen               :"One Screen",
   fourSplitScreen              :"Quad Screen",
   eightSplitScreen             :"Octuple Screen",
   autoMaticAlarm               :"Automatic Alarm Pop-ups",
   captureInfo                  :"Capture Info",
-  //抓拍记录                     ",
+  //抓拍记录                   
   captureTitle                 :"Capture Details",
   allChannel                   :"All Channels",
   captureFigure                :"Images",
   channelNumber                :"Channel No.",
-  channelName                  :"Name",
-  captureDate                  :"Time",
-  //common                       ",
+  channelName                  :"Channel Name",
+  captureDate                  :"Capture Time",
+  //common                     
   warnTitle                    :"Alarm Details",
   capturingFace                :"Capture Face Image",
-  compareFace                  :"Compare Face Image",
-  faceIdent                    :"Identity",
+  compareFace                  :"Portrait Database Image",
+  faceIdent                    :"证件",
   uoloadForCompare             :"Upload face image to compare",
   uploadForSearch              :"Upload face image to search",
   reUploadSearch               :"Click image to re-upload",
-  //告警记录                     ",
-  libraryNameTip               :"Target Database",
+  //告警记录                   
+  libraryNameTip               :"Database",
   libraryAttrTip               :"Database Attribute",
-  allLibrary                   :"All Target Databases",
+  allLibrary                   :"All Databases",
   allLibraryAttr               :"All Database Types",
   blackLibType                 :"Blacklist Database",
   writeLibType                 :"Whitelist Database",
-  //目标库                       ",
+  //目标库                     
   libraryNameRe                :"Enter database name",
   libraryName                  :"Name",
   pictureTotal                 :"Total",
   libCrateTime                 :"Creation Time",
   libraryTypeTag               :"Type",
-  addLibrary                   :"Add target database",
-  editLibrary                  :"Edit target database",
-  //人脸库                       ",
-  face_picTag                  :"Image",
+  addLibrary                   :"Add Database",
+  editLibrary                  :"Edit Database",
+  //人脸库                     
+  face_picTag                  :"Images",
   face_nameTag                 :"Name",
   face_ageTag                  :"Age",
   face_sexTag                  :"Gender",
+  // 告警详情下新增的字段
+  face_mask                    :"面罩",
+  face_glasses                 :"眼镜",
+  face_mustache                :"胡子",
+  face_have                    :"有", // 1.2+
+  face_no                      :"无",// 1.2+
   //人脸库-新增                  ",
   face_rl_addTitle             :"Add target source",
   //人脸库-编辑                  ",
-  face_rl_eidtTitle            :"Edit personnel info",
+  face_rl_eidtTitle            :"Edit person info",
   //人脸库-详情                  ",
-  face_rl_infoTitle            :"Personnel Details",
+  face_rl_infoTitle            :"Person Details",
   face_rl_delete               :"Delete",
-  face_rl_edit                 :"Edit attribute",
-  //删除                         ",
+  face_rl_edit                 :"Edit Attribute",
+  //删除                       
   face_noChoose                :"You haven't selected a record",
   face_onlyDelete              :"You can delete up to 50 records",
-  face_batchDelete             :"You are deleting {num} records,continue?",
+  face_batchDelete             :"You are deleting {num} records, continue?",
   face_deleteTitle             :"This operation will permanently delete the personnel details, continue?",
-  face_affi_delete             :"Delete personnel details",
-  //系统设置                     ",
-  //常规设置                     ",
+  face_affi_delete             :"Delete Personnel Details",
+  //系统设置                   
+  //常规设置                   
   sys_cg_dateFormat            :"Date Format",
   sys_cg_timeFormat            :"Time Format",
   sys_cg_timeZone              :"Time Zone",
@@ -143,10 +152,10 @@ export default {
   sys_cg_ntpsetting            :"NTP Settings",
   sys_cg_nptserver             :"NTP Server",
   sys_cg_port                  :"Port",
-  sys_cg_updateInv             :"Update Cycle (mins) :",
+  sys_cg_updateInv             :"Update Cycle (mins): ",
   sys_cg_using                 :"Enable",
   sys_cg_noUsing               :"Disable",
-  //网络设置                     ",
+  //网络设置                   
   sys_wl_netInter              :"Network Port",
   sys_wl_autoGet               :"DHCP",
   sys_wl_ipAddr                :"IP Address",
@@ -155,20 +164,20 @@ export default {
   sys_wl_macAddr               :"MAC Address",
   sys_wl_dnsServer             :"DNS Server",
   sys_wl_dnsGetFun             :"DNS Setup",
-  sys_wl_dnsAutoGet            :"Automatic",
+  sys_wl_dnsAutoGet            :"DHCP",
   sys_wl_dnsMyGet              :"Manual",
   sys_wl_firstDNS              :"Primary",
   sys_wl_backDNS               :"Secondary",
   sys_wl_defutNet              :"Default NIC",
   sys_wl_useThisNet            :"Network Port",
-  /////编辑                      ",
+  /////编辑                    
   sys_wl_title                 :"Edit Network Port",
   sys_wl_mode                  :"Mode",
   sys_wl_mode_static           :"Static",
   sys_wl_mode_dhcp             :"DHCP",
   sys_wl_IpVersion             :"IP Version",
   sys_wl_addr                  :"Address",
-  //设备管理                     ",
+  //设备管理                   
   sys_equ_mode                 :"Access Mode",
   sys_equ_video                :"Video",
   sys_equ_strategy             :"Capture Strategy",
@@ -177,7 +186,7 @@ export default {
   sys_equ_addEqu               :"Add Device",
   sys_equ_chan                 :"Channel",
   sys_equ_chanNum              :"Channel No.",
-  sys_equ_chanName             :"Name",
+  sys_equ_chanName             :"Channel Name",
   sys_equ_ipOrDomain           :"IP/Domain",
   sys_equ_equType              :"Device Type",
   sys_equ_protocol             :"Protocol",
@@ -187,7 +196,7 @@ export default {
   sys_equ_noOnline             :"Offline",
   sys_equ_clMod_jz             :"Accurate",
   sys_equ_clMod_ds             :"Timing",
-  sys_equ_clMod_ss             :"Live",
+  sys_equ_clMod_ss             :"Realtime",
   sys_equ_imgMode1             :"Capture Camera",
   sys_equ_imgMode2             :"IP Camera",
 
@@ -204,16 +213,16 @@ export default {
   sys_equ_delete               :"This operation will permanently delete this device, continue?",
   sys_equ_deleteErr            :"No free channel for more devices",
   sys_equ_deleteOk             :"The device is deleted",
-  sys_equ_libTag               :"Target Database",
-  sys_equ_threshold            :"Threshold(%)",
+  sys_equ_libTag               :"Database",
+  sys_equ_threshold            :"Threshold (%)",
   sys_equ_userName             :"Username",
   sys_equ_password             :"Password",
   sys_equ_codeStream           :"Data Rate",
   sys_equ_ipAddr               :"IP Address",
   sys_equ_equAddr              :"Camera Position",
-  //热区绘制                     ",
+  //热区绘制                   
   hotToDraw_title              :"ROI",
-  //系统信息                     ",
+  //系统信息                   
   sys_info_version             :"Version Information",
   sys_info_productEq           :"Serial Number",
   sys_info_sysVer              :"System Version",
@@ -222,7 +231,7 @@ export default {
   sys_info_sysReboot           :"System Restart",
   sys_info_reboot              :"Restart",
 
-
+  
   system_resource              : "System Resources",
   cpu_usage                    : "CPU Usage",
   memory_usage                 : "MEM Usage",
@@ -235,6 +244,9 @@ export default {
   sys_save_strategy            :"Storage Strategy",
   sys_save_fullCover           :"Refill",
   sys_save_fullStop            :"Freeze",
+  sys_save_emptyRecord         :"清空记录",//1.2+
+  sys_save_warn                :"此操作将清空抓拍和告警记录，是否继续?",//1.2+
+  sys_save_delSucc             :"抓拍和告警记录已清空", //1.2+
   //接口协议                     ",
   sys_api_equId                :"Device ID",
   sys_api_produce              :"Access Protocol",
@@ -242,26 +254,26 @@ export default {
   sys_api_mqttName             :"mqtt Username",
   sys_api_mqttPwd              :"mqtt Password",
   sys_api_title                :"HTTP Configuration",
-  //输入提示                     ",
+  //输入提示                   
   inputError                   :"There are still empty fields",
-  //placehor                     ",
+  //placehor                   
   choose                       :"Select",
   inputLibName                 :"Enter database name",
   inputIDOrName                :"Enter name",
   inputTime                    :"Select system time",
   inputName                    :"Enter name",
   inputAge                     :"Enter age",
-  inputIdent                   :"Enter identity No.",
+  inputIdent                   :"Enter ID number",
   inputAddr                    :"Enter address",
   chooseDateTime               :"Select date and time",
-  ///login                       ",
+  ///login                     
   inputUserName                :"Enter username",
   inputUserPwd                 :"Enter password",
-  //http                         ",
+  //http                       
   inputDeviceId                :"The device ID cannot be empty",
   inputHttpUrl                 :"http_url cannot be empty",
   inputHttpKey                 :"http_key cannot be empty",
-  //err                          ",
+  //err                        
   libNameErr                   :"The database name cannot be empty",
   libTypeErr                   :"No database type selected",
   ageErr                       :"Fill in the correct age",
@@ -273,16 +285,16 @@ export default {
   mqttIpErr                    :"Mqtt_ip cannot be empty",
   mqttNameErr                  :"The username of mqtt cannot be empty",
   mqttPwdErr                   :"The password of mqtt cannot be empty",
-  //confirm                      ",
+  //confirm                    
   changeModeWarn               :"After confirming, the system will clear the current cameras and restart the service. Are you sure to confirm?",
   changeModeTitle              :"Switch access mode",
-  changeModeSucc               :"Access mode changed successfully! Please refresh the page in 20s to log in to the system again.",
+  changeModeSucc               :"Access mode changed successfully!Please refresh the page in 20s and log in to the system again",
   changeCLTip                  :"Do you want to switch to the {type} strategy?",
   changeCLSucc                 :"Capture strategy changed successfully",
   mqttCloseSucc                :"MQTT closed successfully. Please log in again in 25s...",
   mqttUpdateSucc               :"MQTT configuration information modified successfully. Please log in again in 25s...",
   httpUpdateSucc               :"HTTP configuration information modified successfully. Please log in again in 25s...",
-  //下载页面                     ",
+  //下载页面                   
   download_src                 :"Download Link",
   clickDownload                :"Click to download for details",
   saveSuccess                  :"Saved",
@@ -290,21 +302,21 @@ export default {
                                
   //补缺                       
   onLibrary                    :"Database",
-  deleteLibrayTip              :"This operation will permanently delete this target database, continue?",
-  deleteLibTitle               :"Delete Target Database",
-  libraryMaxNumErr             :"The number of the target databases has reached the limit",
+  deleteLibrayTip              :"This operation will permanently delete this database, continue?",
+  deleteLibTitle               :"Delete Database",
+  libraryMaxNumErr             :"The number of the databases has reached the limit",
   addOk                        :"Added",
   updateOk                     :"Modified",
   addTip                       :"Add",
   targetSearchTip              :"Enter keyword",
-  addNewFaceInfo               :"Add target",
-  chooseFolder                 :"Select a folder",
-  batchDelete                  :"Bulk deletion",
+  addNewFaceInfo               :"Single Import",
+  chooseFolder                 :"Select Folder",
+  batchDelete                  :"Batch Delete",
   sureDelete                   :"OK",
   saveTip                      :"Save",
   sex_hanzi                    :"Male",
   sex_meizi                    :"Female",
-  idCardNumber                 :"Identity No.",
+  idCardNumber                 :"ID Number",
                                
   cancelUpdate                 :"Cancel",
   saveUpdate                   :"Save",
@@ -322,17 +334,17 @@ export default {
   noSupportVideo               :"In image mode, live video is not supported",
                                
   softUpdate                   :"Software Upgrade",
-  loadUpdatePackage            :"Import upgrade file",
-  clickLoadUpdate              :"Select upgrade file",
+  loadUpdatePackage            :"Upgrade File",
+  clickLoadUpdate              :"Select Upgrade File",
   softUpdateTip                :"This operation will upgrade the software, continue?",
-  softUpdateSuccess            :"Software upgrade is successful! Please refresh the page in 20s to log back into the system",
+  softUpdateSuccess            :"Software upgrade is successful! Please refresh the page in 20s and log in to the system again",
   noChooseUpdateFile           :"You haven't selected an upgrade file yet",
   rebootTip                    :"This operation will restart the device, continue?",
   rebootTitle                  :"Restart",
   rebootSuccess                :"The device will be restarted. Please log in again in about 25s…",
                                
-  export                       :"Import",
-  upgrade                      :"Upgrade",
+  export                       :"导 入",
+  upgrade                      :"升 级",
                                
   flag_yes                     :"Yes",
   flag_no                      :"No",
@@ -349,8 +361,8 @@ export default {
   noChooseChannel              :"The channel has not been selected",
   channelNameNull              :"The channel name cannot be empty",
   protocolNull                 :"The protocol has not been selected",
-                                 
-  RTSPAddressNull              :"The RTSP address cannot be empty",
+                               
+  RTSPAddressNull              :"RTSP地址不能为空",
   IPAddressNull                :"The IP address cannot be empty",
   IPAddressErr                 :"Incorrect IP address format",
   portNotNull                  :"The port cannot be empty",
@@ -358,13 +370,13 @@ export default {
   inputInteger                 :"Please enter an integer value",
   inputPort                    :"The port numbers range from 0 to 65535",
                                
-  chooseLibrary                :"Select target database",
+  chooseLibrary                :"Select Database",
                                
   threshold                    :"Threshold",
   thresholdNotNull             :"The threshold cannot be empty",
-  libFaceIsNull                :"No target database",
+  libFaceIsNull                :"No database",
                                
-  updateBtn                    :"Modify",
+  updateBtn                    :"修 改",
                                
   y_m_d                        :"Year-month-day",
   m_d_y                        :"Month-day-year",
@@ -379,8 +391,8 @@ export default {
   https_start                  :"On",
   https_unInstall              :"Uninstall",
   https_upload                 :"Upload",
-  https_cert_hp                :"Click Import to select an SSL certificate",
-  https_key_hp                 :"Click Import to select an SSL key",
+  https_cert_hp                :"Click to select an SSL certificate",
+  https_key_hp                 :"Click to select an SSL key",
   https_load_cert              :"Import Crt",
   https_cur_cert               :"Current Crt",
   https_cur_key                :"Current Key",
@@ -388,49 +400,49 @@ export default {
                                
   //Flash相关                  
   enableFlashTitle             :"Install or enable the Flash Player",
-  enableFlashTips              :"The current feature requires Flash Player support, please install or enable it",
+  enableFlashTips              :"The current feature requires Flash Player support, please install or enable it first",
                                
   confirmChangeMQTTStatusTitle :"Toggle Access Protocol",
-  confirmChangeMQTTStatusTips  :"Please be careful! Toggling the access protocol will delete all data,  continue?",
+  confirmChangeMQTTStatusTips  :"Please be careful!Toggling the access protocol will delete all data, continue?",
 
   https_key_no_choose          : "SSL key file not yet selected",
   https_crt_no_choose          : "SSL certificate file not yet selected",
 
-   //设备管理补缺
-  changeModeCl                 : "Modify capture strategy",
+  //设备管理补缺
+  changeModeCl                 : "Modify Capture Strategy",
   Accurate                     : "Accurate",
   Timing                       : "Timing",
   RealTime                     : "Realtime",
 
-  drawAreaMsg                  : "The length or width of ROI cannot be less than 60px",  
+  drawAreaMsg                  : "The length or width of ROI cannot be less than 60px",
 
   networkError                 : "Network Error",
-  manage                       : "Manage", 
+  manage                       : "Manage",
   notNull                      : "The {name} cannot be empty",
   valueErr                     : "Incorrect {name} format",
   uploadOk                     : "Uploaded",
   unInstallOk                  : "Uninstalled",
- 
+  
   //1:N人脸对比
   faceCtra_titComp             : "1:N Comparison",
   faceCtra_grade               : "Rating Reference",
   faceCtra_frist               : "0 ~ 60%: The two images are probably not the same person;",
   faceCtra_second              : "60% ~ 85%: The two images might be the same person;",
   faceCtra_third               : "85% ~ 100%: The two images are most likely the same person!",
-  
+
   // M:N 对比
   retri_tit                    : "Compare",
   retri_getResult              : "TOP-N",
-  compare_libary               :"Please select the target database to search",
-  
+  compare_libary               :"Please select the database to search",
+
   // 1.2.1
   interface_protocol_conf      :"Interface Protocol Settings",
   alarmRule_blacklist          :"Blacklist",
   alarmRule_whitelist          :"Whitelist",
   alarmRule_stranger           :"Stranger",
 
-  // 库管理
-  lib_custom_max_error         :"自定义属性最多五个",
+  // // 库管理
+  // lib_custom_max_error         :"自定义属性最多五个",
   minimum_face_pix_setting     :"Min. Face Size",
   maximum_face_pix_setting     :"Max. Face Size",
   detection_frame_rate         :"检测帧率",
@@ -446,7 +458,8 @@ export default {
   pwd_inconsistency            :"The new passwords do not match",
   reset_password               :"Reset Password",
   pwd_Length                   :"Please enter more than 8 characters",
-  pwd_rules                    :"8 characters allowed, including lettes,numbers and special symbols",
+  pwd_rules                    :"8 characters allowed,including lettes,numbers and special symbols",
+  user_rule                    :"Should be letters,Numbers,characters (@ and. -),length <50",//1.2+
   // 系统日志
   logs_edit_content            :"日志内容",
   logs_edit_person             :"用户",
@@ -464,13 +477,13 @@ export default {
   logsFile                     :"Log Files",
   FileSize                     :"Size",
   updateTime                   :"Modification time",
-  inputViperUrl                : "url",
-  inputViperUrlErr              : "The url cannot be empty",
-  inputViperKey                 : "Enable",
-  inputViperSwitch              : "key",
-  inputViperKeyErr              : "The key cannot be empty",
-  http_url                     : "http_url",
-  http_key                     : "http_key",
+  inputViperUrl                 : "url",
+  inputViperUrlErr             : "url cannot be empty",
+  inputViperSwitch             : "Enable",
+  inputViperKey                : "key",
+  inputViperKeyErr             : "key cannot be empty",
+  http_url                      : "http_url",
+  http_key                      : "http_key",
 // 信号联动管理
   device_name                  :"Controller Name",
   device_name_notNull          :"Controller name cannot be empty",
@@ -505,4 +518,5 @@ export default {
   default_value                :"默认值",
   // equipment_dev_ip             :"设备IP",
   admin                        : "Administrator",
+  all_user_name                : "全部用户",
 };
